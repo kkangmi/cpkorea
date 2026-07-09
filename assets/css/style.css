@@ -37,8 +37,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .section { padding: 64px 0; }
 .section-alt { background: var(--bg-2); }
 
-/* Section gradient overrides — 웨이브 연결 + 섹션 리듬 */
-#about    { background: linear-gradient(180deg, #C8DFFA 0%, var(--bg-2) 12%); }
+/* Section gradient overrides */
 #services { background: linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%); }
 #products { background: linear-gradient(180deg, var(--bg-2) 0%, #DCF0FF 100%); }
 
@@ -106,8 +105,8 @@ body.ko [data-ko] { display: revert; }
 /* ===== HERO ===== */
 #hero {
   min-height: 100vh; display: flex; align-items: center;
-  padding-top: 72px; padding-bottom: 60px; position: relative; overflow: hidden;
-  background: linear-gradient(160deg, #C8E3FA 0%, #E5F3FF 40%, #FFFFFF 100%);
+  padding-top: 72px; padding-bottom: 40px; position: relative; overflow: hidden;
+  background: linear-gradient(160deg, #C8E3FA 0%, #E5F3FF 50%, #EFF7FF 100%);
 }
 #hero::before {
   content: '';
@@ -195,12 +194,8 @@ body.ko [data-ko] { display: revert; }
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-.hero-wave {
-  position: absolute; bottom: -1px; left: 0; right: 0;
-  z-index: 3; line-height: 0;
-}
-.hero-wave svg { width: 100%; display: block; height: 70px; }
 @media (max-width: 900px) { .hero-deco { display: none; } }
+#contact .contact-grid { grid-template-columns: 1fr; gap: 28px; }
 
 /* ===== SECTION LABELS ===== */
 .section-label {
