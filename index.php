@@ -20,27 +20,27 @@
       <img src="assets/images/logo.png" alt="C&P Korea">
     </a>
     <ul class="nav-menu">
-      <li><a href="#services"  data-en="Services"  data-ko="서비스">Services</a></li>
-      <li><a href="#navtor"   data-en="NAVTOR"    data-ko="NAVTOR">NAVTOR</a></li>
-      <li><a href="#partners" data-en="Partners"  data-ko="파트너">Partners</a></li>
-      <li><a href="#contact"  data-en="Contact"   data-ko="문의하기">Contact</a></li>
+      <li><a href="#services"><span data-en>Services</span><span data-ko>서비스</span></a></li>
+      <li><a href="#navtor"><span data-en>NAVTOR</span><span data-ko>NAVTOR</span></a></li>
+      <li><a href="#partners"><span data-en>Partners</span><span data-ko>파트너</span></a></li>
+      <li><a href="#contact"><span data-en>Contact</span><span data-ko>문의하기</span></a></li>
     </ul>
     <div class="nav-right">
       <div class="lang-toggle">
         <button class="lang-en active" onclick="setLang('en')">EN</button>
         <button class="lang-ko" onclick="setLang('ko')">KO</button>
       </div>
-      <a href="#contact" class="btn-nav" data-en="Get in Touch" data-ko="문의하기">Get in Touch</a>
+      <a href="#contact" class="btn-nav"><span data-en>Get in Touch</span><span data-ko>문의하기</span></a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <i class="fa fa-bars"></i>
     </button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#services"  onclick="closeMobile()" data-en="Services"  data-ko="서비스">Services</a>
-    <a href="#navtor"   onclick="closeMobile()" data-en="NAVTOR"    data-ko="NAVTOR">NAVTOR</a>
-    <a href="#partners" onclick="closeMobile()" data-en="Partners"  data-ko="파트너">Partners</a>
-    <a href="#contact"  onclick="closeMobile()" data-en="Contact"   data-ko="문의하기">Contact</a>
+    <a href="#services"  onclick="closeMobile()"><span data-en>Services</span><span data-ko>서비스</span></a>
+    <a href="#navtor"   onclick="closeMobile()"><span data-en>NAVTOR</span><span data-ko>NAVTOR</span></a>
+    <a href="#partners" onclick="closeMobile()"><span data-en>Partners</span><span data-ko>파트너</span></a>
+    <a href="#contact"  onclick="closeMobile()"><span data-en>Contact</span><span data-ko>문의하기</span></a>
     <div class="mobile-lang">
       <button class="lang-en active" onclick="setLang('en'); closeMobile();">EN</button>
       <button class="lang-ko" onclick="setLang('ko'); closeMobile();">KO</button>
@@ -372,10 +372,10 @@
         <div class="footer-tagline" data-ko>해양 전자 &amp; ICT 솔루션 — 부산</div>
       </div>
       <div class="footer-links">
-        <a href="#services"  data-en="Services"  data-ko="서비스">Services</a>
-        <a href="#navtor"   data-en="NAVTOR"    data-ko="NAVTOR">NAVTOR</a>
-        <a href="#partners" data-en="Partners"  data-ko="파트너">Partners</a>
-        <a href="#contact"  data-en="Contact"   data-ko="문의하기">Contact</a>
+        <a href="#services"><span data-en>Services</span><span data-ko>서비스</span></a>
+        <a href="#navtor"><span data-en>NAVTOR</span><span data-ko>NAVTOR</span></a>
+        <a href="#partners"><span data-en>Partners</span><span data-ko>파트너</span></a>
+        <a href="#contact"><span data-en>Contact</span><span data-ko>문의하기</span></a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -386,18 +386,5 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
-<script>
-/* data-en / data-ko attribute text update */
-function applyLangAttr() {
-  document.querySelectorAll('[data-en][data-ko]').forEach(el => {
-    if (typeof el.getAttribute('data-en') === 'string' && el.getAttribute('data-en') !== '') {
-      el.textContent = lang === 'ko' ? el.getAttribute('data-ko') : el.getAttribute('data-en');
-    }
-  });
-}
-const _origSetLang = setLang;
-setLang = function(l) { _origSetLang(l); applyLangAttr(); };
-applyLangAttr();
-</script>
 </body>
 </html>
