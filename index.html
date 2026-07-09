@@ -346,18 +346,90 @@
         <span data-en>Major Clients</span><span data-ko>주요 고객사</span>
       </div>
       <div class="clients-grid">
-        <div class="client-item reveal reveal-d1">현대중공업<small>Hyundai Heavy Industries</small></div>
-        <div class="client-item reveal reveal-d1">DSME<small>대우조선해양</small></div>
-        <div class="client-item reveal reveal-d2">삼성중공업<small>Samsung Heavy Industries</small></div>
-        <div class="client-item reveal reveal-d2">한진중공업<small>Hanjin Heavy Industries</small></div>
-        <div class="client-item reveal reveal-d2">현대BS&amp;C<small>Hyundai BS&C</small></div>
-        <div class="client-item reveal reveal-d3">산업통상자원부<small>MOTIE</small></div>
-        <div class="client-item reveal reveal-d1">해양수산부<small>MOF Korea</small></div>
-        <div class="client-item reveal reveal-d1">ETRI<small>전자통신연구원</small></div>
-        <div class="client-item reveal reveal-d2">KIOST<small>한국해양과학기술원</small></div>
-        <div class="client-item reveal reveal-d2">중소조선연구원<small>RIMS</small></div>
-        <div class="client-item reveal reveal-d3">KOMERI<small>한국선박기자재연구원</small></div>
-        <div class="client-item reveal reveal-d3">Kongsberg<small>콩스버그</small></div>
+        <div class="client-item reveal reveal-d1">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/hhi.co.kr" alt="현대중공업" loading="lazy">
+          </div>
+          <div class="client-name">현대중공업</div>
+          <div class="client-sub">Hyundai Heavy Industries</div>
+        </div>
+        <div class="client-item reveal reveal-d1">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/dsme.co.kr" alt="DSME" loading="lazy">
+          </div>
+          <div class="client-name">DSME</div>
+          <div class="client-sub">대우조선해양</div>
+        </div>
+        <div class="client-item reveal reveal-d2">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/samsungshi.com" alt="삼성중공업" loading="lazy">
+          </div>
+          <div class="client-name">삼성중공업</div>
+          <div class="client-sub">Samsung Heavy Industries</div>
+        </div>
+        <div class="client-item reveal reveal-d2">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/hjsc.co.kr" alt="한진중공업" loading="lazy">
+          </div>
+          <div class="client-name">한진중공업</div>
+          <div class="client-sub">Hanjin Heavy Industries</div>
+        </div>
+        <div class="client-item reveal reveal-d2">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/hbsc.co.kr" alt="현대BS&C" loading="lazy">
+          </div>
+          <div class="client-name">현대BS&amp;C</div>
+          <div class="client-sub">Hyundai BS&C</div>
+        </div>
+        <div class="client-item reveal reveal-d3">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/motie.go.kr" alt="산업통상자원부" loading="lazy">
+          </div>
+          <div class="client-name">산업통상자원부</div>
+          <div class="client-sub">MOTIE</div>
+        </div>
+        <div class="client-item reveal reveal-d1">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/mof.go.kr" alt="해양수산부" loading="lazy">
+          </div>
+          <div class="client-name">해양수산부</div>
+          <div class="client-sub">MOF Korea</div>
+        </div>
+        <div class="client-item reveal reveal-d1">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/etri.re.kr" alt="ETRI" loading="lazy">
+          </div>
+          <div class="client-name">ETRI</div>
+          <div class="client-sub">전자통신연구원</div>
+        </div>
+        <div class="client-item reveal reveal-d2">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/kiost.ac.kr" alt="KIOST" loading="lazy">
+          </div>
+          <div class="client-name">KIOST</div>
+          <div class="client-sub">한국해양과학기술원</div>
+        </div>
+        <div class="client-item reveal reveal-d2">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/rims.re.kr" alt="중소조선연구원" loading="lazy">
+          </div>
+          <div class="client-name">중소조선연구원</div>
+          <div class="client-sub">RIMS</div>
+        </div>
+        <div class="client-item reveal reveal-d3">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/komeri.re.kr" alt="KOMERI" loading="lazy">
+          </div>
+          <div class="client-name">KOMERI</div>
+          <div class="client-sub">한국선박기자재연구원</div>
+        </div>
+        <div class="client-item reveal reveal-d3">
+          <div class="client-logo-wrap">
+            <img src="https://logo.clearbit.com/kongsberg.com" alt="Kongsberg" loading="lazy">
+          </div>
+          <div class="client-name">Kongsberg</div>
+          <div class="client-sub">콩스버그</div>
+        </div>
       </div>
     </div>
 
