@@ -439,6 +439,9 @@
       </div>
       <div class="partners-grid">
         <div class="partner-card reveal reveal-d1">
+          <div class="partner-logo-wrap">
+            <img src="https://logo.clearbit.com/navtor.com" alt="NAVTOR" loading="lazy">
+          </div>
           <div class="partner-logo-txt">NAVTOR</div>
           <div class="partner-name">navtor.com</div>
           <p class="partner-desc">
@@ -448,6 +451,9 @@
           <span class="partner-badge">&#10003; <span data-en>Official Dealer &mdash; South Korea</span><span data-ko>공식 딜러 &mdash; 대한민국</span></span>
         </div>
         <div class="partner-card reveal reveal-d2">
+          <div class="partner-logo-wrap">
+            <img src="https://logo.clearbit.com/hammar.com" alt="Hammar" loading="lazy">
+          </div>
           <div class="partner-logo-txt">Hammar</div>
           <div class="partner-name">hammar.com</div>
           <p class="partner-desc">
@@ -457,6 +463,9 @@
           <span class="partner-badge">&#128279; <span data-en>Technology Partner</span><span data-ko>기술 파트너</span></span>
         </div>
         <div class="partner-card reveal reveal-d3">
+          <div class="partner-logo-wrap">
+            <img src="https://logo.clearbit.com/navis.com" alt="Navis" loading="lazy">
+          </div>
           <div class="partner-logo-txt">Navis</div>
           <div class="partner-name">navis.com (Cargotec)</div>
           <p class="partner-desc">
