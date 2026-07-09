@@ -375,11 +375,11 @@
           <span class="partner-badge">&#10003; <span data-en>Official Dealer &mdash; South Korea</span><span data-ko>공식 딜러 &mdash; 대한민국</span></span>
         </div>
         <div class="partner-card reveal reveal-d2">
-          <div class="partner-logo-txt">Kongsberg</div>
-          <div class="partner-name">kongsberg.com</div>
+          <div class="partner-logo-txt">Hammar</div>
+          <div class="partner-name">hammar.com</div>
           <p class="partner-desc">
-            <span data-en>World-leading maritime technology supplier for navigation, dynamic positioning, and automation systems for commercial and naval vessels.</span>
-            <span data-ko>상업선 및 군함용 항법, 동적 위치 유지, 자동화 시스템 분야의 세계 선두 해양 기술 기업.</span>
+            <span data-en>Swedish manufacturer of hydrostatic releases and marine safety equipment. Trusted globally for life-saving appliance systems on commercial vessels.</span>
+            <span data-ko>스웨덴의 수압 이탈기 및 선박 안전장비 전문 제조사. 상업선의 구명 장비 시스템 분야에서 세계적으로 신뢰받고 있습니다.</span>
           </p>
           <span class="partner-badge">&#128279; <span data-en>Technology Partner</span><span data-ko>기술 파트너</span></span>
         </div>
