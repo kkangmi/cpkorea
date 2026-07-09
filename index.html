@@ -68,9 +68,6 @@
       <line x1="26" y1="250" x2="474" y2="250" stroke="rgba(8,145,178,.06)" stroke-width="1"/>
       <line x1="91" y1="91" x2="409" y2="409" stroke="rgba(8,145,178,.04)" stroke-width="1"/>
       <line x1="409" y1="91" x2="91" y2="409" stroke="rgba(8,145,178,.04)" stroke-width="1"/>
-      <circle class="radar-pulse p1" cx="250" cy="250" r="8" fill="none" stroke="rgba(8,145,178,.55)" stroke-width="1.5"/>
-      <circle class="radar-pulse p2" cx="250" cy="250" r="8" fill="none" stroke="rgba(8,145,178,.55)" stroke-width="1.5"/>
-      <circle class="radar-pulse p3" cx="250" cy="250" r="8" fill="none" stroke="rgba(8,145,178,.55)" stroke-width="1.5"/>
       <g class="radar-sweep">
         <path d="M250,250 L250,27 A223,223 0 0,1 291,35 Z" fill="rgba(8,145,178,.07)"/>
         <line x1="250" y1="250" x2="250" y2="27" stroke="rgba(8,145,178,.50)" stroke-width="2"/>
@@ -135,7 +132,7 @@
   </div>
   <div class="hero-wave" aria-hidden="true">
     <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,35 C180,65 360,5 540,35 C720,65 900,5 1080,35 C1260,65 1380,20 1440,35 L1440,70 L0,70 Z" fill="#EFF7FF"/>
+      <path d="M0,35 C180,65 360,5 540,35 C720,65 900,5 1080,35 C1260,65 1380,20 1440,35 L1440,70 L0,70 Z" fill="#C8DFFA"/>
     </svg>
   </div>
 </section>
