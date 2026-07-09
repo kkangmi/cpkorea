@@ -347,86 +347,62 @@
       </div>
       <div class="clients-grid">
         <div class="client-item reveal reveal-d1">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/hhi.co.kr" alt="현대중공업" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/hhi.svg" alt="현대중공업"></div>
           <div class="client-name">현대중공업</div>
           <div class="client-sub">Hyundai Heavy Industries</div>
         </div>
         <div class="client-item reveal reveal-d1">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/dsme.co.kr" alt="DSME" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/dsme.svg" alt="DSME"></div>
           <div class="client-name">DSME</div>
           <div class="client-sub">대우조선해양</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/samsungshi.com" alt="삼성중공업" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/samsungshi.png" alt="삼성중공업"></div>
           <div class="client-name">삼성중공업</div>
           <div class="client-sub">Samsung Heavy Industries</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/hjsc.co.kr" alt="한진중공업" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/hanjin.svg" alt="한진중공업"></div>
           <div class="client-name">한진중공업</div>
           <div class="client-sub">Hanjin Heavy Industries</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/hbsc.co.kr" alt="현대BS&C" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/hbsc.svg" alt="현대BS&amp;C"></div>
           <div class="client-name">현대BS&amp;C</div>
           <div class="client-sub">Hyundai BS&C</div>
         </div>
         <div class="client-item reveal reveal-d3">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/motie.go.kr" alt="산업통상자원부" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/motie.svg" alt="산업통상자원부"></div>
           <div class="client-name">산업통상자원부</div>
           <div class="client-sub">MOTIE</div>
         </div>
         <div class="client-item reveal reveal-d1">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/mof.go.kr" alt="해양수산부" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/mof.svg" alt="해양수산부"></div>
           <div class="client-name">해양수산부</div>
           <div class="client-sub">MOF Korea</div>
         </div>
         <div class="client-item reveal reveal-d1">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/etri.re.kr" alt="ETRI" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/etri.svg" alt="ETRI"></div>
           <div class="client-name">ETRI</div>
           <div class="client-sub">전자통신연구원</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/kiost.ac.kr" alt="KIOST" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/kiost.svg" alt="KIOST"></div>
           <div class="client-name">KIOST</div>
           <div class="client-sub">한국해양과학기술원</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/rims.re.kr" alt="중소조선연구원" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/rims.svg" alt="중소조선연구원"></div>
           <div class="client-name">중소조선연구원</div>
           <div class="client-sub">RIMS</div>
         </div>
         <div class="client-item reveal reveal-d3">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/komeri.re.kr" alt="KOMERI" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/komeri.svg" alt="KOMERI"></div>
           <div class="client-name">KOMERI</div>
           <div class="client-sub">한국선박기자재연구원</div>
         </div>
         <div class="client-item reveal reveal-d3">
-          <div class="client-logo-wrap">
-            <img src="https://logo.clearbit.com/kongsberg.com" alt="Kongsberg" loading="lazy">
-          </div>
+          <div class="client-logo-wrap"><img src="assets/images/logos/kongsberg.svg" alt="Kongsberg"></div>
           <div class="client-name">Kongsberg</div>
           <div class="client-sub">콩스버그</div>
         </div>
@@ -440,7 +416,7 @@
       <div class="partners-grid">
         <div class="partner-card reveal reveal-d1">
           <div class="partner-logo-wrap">
-            <img src="https://logo.clearbit.com/navtor.com" alt="NAVTOR" loading="lazy">
+            <img src="assets/images/logos/navtor.png" alt="NAVTOR">
           </div>
           <div class="partner-logo-txt">NAVTOR</div>
           <div class="partner-name">navtor.com</div>
@@ -452,7 +428,7 @@
         </div>
         <div class="partner-card reveal reveal-d2">
           <div class="partner-logo-wrap">
-            <img src="https://logo.clearbit.com/hammar.com" alt="Hammar" loading="lazy">
+            <img src="assets/images/logos/hammar.svg" alt="Hammar">
           </div>
           <div class="partner-logo-txt">Hammar</div>
           <div class="partner-name">hammar.com</div>
@@ -464,7 +440,7 @@
         </div>
         <div class="partner-card reveal reveal-d3">
           <div class="partner-logo-wrap">
-            <img src="https://logo.clearbit.com/navis.com" alt="Navis" loading="lazy">
+            <img src="assets/images/logos/navis.svg" alt="Navis">
           </div>
           <div class="partner-logo-txt">Navis</div>
           <div class="partner-name">navis.com (Cargotec)</div>
