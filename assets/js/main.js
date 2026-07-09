@@ -7,6 +7,9 @@ function setLang(l) {
   document.body.classList.toggle('ko', l === 'ko');
   document.querySelectorAll('.lang-ko').forEach(b => b.classList.toggle('active', l === 'ko'));
   document.querySelectorAll('.lang-en').forEach(b => b.classList.toggle('active', l === 'en'));
+  document.querySelectorAll('select option[data-en]').forEach(o => {
+    o.textContent = l === 'ko' ? o.dataset.ko : o.dataset.en;
+  });
   localStorage.setItem('cpkorea_lang', l);
 }
 (function initLang() {
