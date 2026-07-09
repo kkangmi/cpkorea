@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>C&P Korea Co., Ltd. — Marine Electronics &amp; ICT Solutions</title>
-<meta name="description" content="C&P Korea provides marine electronics, maritime ICT, cyber resilience, and NAVTOR digital navigation solutions. Based in Busan, South Korea.">
+<meta name="description" content="C&P Korea provides marine electronics, marine system integration, R&D services and NAVTOR digital navigation solutions. Based in Busan, South Korea.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -22,11 +22,12 @@
       <span class="nav-logo-text">C&amp;P KOREA</span>
     </a>
     <ul class="nav-menu">
-      <li><a href="#about"><span data-en>About</span><span data-ko>회사 소개</span></a></li>
-      <li><a href="#services"><span data-en>Services</span><span data-ko>서비스</span></a></li>
+      <li><a href="#about"><span data-en>About</span><span data-ko>소개</span></a></li>
+      <li><a href="#services"><span data-en>Services</span><span data-ko>업무</span></a></li>
+      <li><a href="#products"><span data-en>Products</span><span data-ko>제품</span></a></li>
       <li><a href="#navtor"><span data-en>NAVTOR</span><span data-ko>NAVTOR</span></a></li>
-      <li><a href="#partners"><span data-en>Partners</span><span data-ko>파트너</span></a></li>
-      <li><a href="#contact"><span data-en>Contact</span><span data-ko>문의하기</span></a></li>
+      <li><a href="#partners"><span data-en>Partners</span><span data-ko>고객 &amp; 파트너</span></a></li>
+      <li><a href="#contact"><span data-en>Contact</span><span data-ko>문의</span></a></li>
     </ul>
     <div class="nav-right">
       <div class="lang-toggle">
@@ -42,11 +43,12 @@
     </button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#about"    onclick="closeMobile()"><span data-en>About</span><span data-ko>회사 소개</span></a>
-    <a href="#services" onclick="closeMobile()"><span data-en>Services</span><span data-ko>서비스</span></a>
+    <a href="#about"    onclick="closeMobile()"><span data-en>About</span><span data-ko>소개</span></a>
+    <a href="#services" onclick="closeMobile()"><span data-en>Services</span><span data-ko>업무</span></a>
+    <a href="#products" onclick="closeMobile()"><span data-en>Products</span><span data-ko>제품</span></a>
     <a href="#navtor"   onclick="closeMobile()"><span data-en>NAVTOR</span><span data-ko>NAVTOR</span></a>
-    <a href="#partners" onclick="closeMobile()"><span data-en>Partners</span><span data-ko>파트너</span></a>
-    <a href="#contact"  onclick="closeMobile()"><span data-en>Contact</span><span data-ko>문의하기</span></a>
+    <a href="#partners" onclick="closeMobile()"><span data-en>Partners</span><span data-ko>고객 &amp; 파트너</span></a>
+    <a href="#contact"  onclick="closeMobile()"><span data-en>Contact</span><span data-ko>문의</span></a>
     <div class="mobile-lang">
       <button class="lang-en active" onclick="setLang('en');closeMobile();">EN</button>
       <button class="lang-ko" onclick="setLang('ko');closeMobile();">KO</button>
@@ -63,18 +65,18 @@
         <span data-ko>해양 전자 &amp; ICT 솔루션 · 부산</span>
       </div>
       <h1 class="hero-h1">
-        <span data-en>Your Trusted Partner for<br><span class="accent">Smart Maritime Technology</span></span>
-        <span data-ko>스마트 해양 기술을 위한<br><span class="accent">신뢰할 수 있는 파트너</span></span>
+        <span data-en>Engineering Smarter,<br><span class="accent">Safer Maritime Operations</span></span>
+        <span data-ko>더 스마트하고 안전한<br><span class="accent">해양 운항을 설계합니다</span></span>
       </h1>
-      <p class="hero-sub" data-en>C&amp;P Korea delivers expert marine electronics, maritime ICT, cyber resilience, and NAVTOR digital navigation solutions — from Busan to every ocean.</p>
-      <p class="hero-sub" data-ko>씨앤피코리아는 부산에서 전 세계 해역까지, 해양 전자 기술·ICT·사이버 보안·NAVTOR 디지털 항법 솔루션을 제공합니다.</p>
+      <p class="hero-sub" data-en>C&amp;P Korea minimizes vessel downtime, enhances crew situational awareness, and ensures regulatory compliance — through expert marine electronics, system integration, and proprietary maritime IT solutions.</p>
+      <p class="hero-sub" data-ko>씨앤피코리아는 선박 가동 중단 최소화, 승무원 상황 인식 강화, 규제 준수 보장을 목표로 해양 전자 설치, 시스템 통합, 자체 개발 해양 IT 솔루션을 제공합니다.</p>
       <div class="hero-ctas">
         <a href="#services" class="btn-primary">
-          <span data-en>Explore Services</span><span data-ko>서비스 보기</span>
+          <span data-en>Our Services</span><span data-ko>서비스 보기</span>
           <i class="fa fa-arrow-right" style="font-size:12px;"></i>
         </a>
         <a href="#contact" class="btn-outline">
-          <span data-en>Request a Quote</span><span data-ko>견적 문의</span>
+          <span data-en>Get a Quote</span><span data-ko>견적 문의</span>
         </a>
       </div>
       <div class="hero-stats">
@@ -89,9 +91,9 @@
           <div class="hero-stat-label" data-ko>공식 대리점</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-num">ISO</div>
-          <div class="hero-stat-label" data-en>Certified Engineers</div>
-          <div class="hero-stat-label" data-ko>공인 엔지니어</div>
+          <div class="hero-stat-num">5</div>
+          <div class="hero-stat-label" data-en>Proprietary Products</div>
+          <div class="hero-stat-label" data-ko>자체 개발 제품</div>
         </div>
         <div class="hero-stat">
           <div class="hero-stat-num">24/7</div>
@@ -113,29 +115,39 @@
           <span data-ko>씨앤피코리아 소개</span>
         </div>
         <h2 class="section-title">
-          <span data-en>Marine Technology Specialists<br>Based in Busan</span>
+          <span data-en>Marine Technology<br>Specialists in Busan</span>
           <span data-ko>부산 기반<br>해양 기술 전문 기업</span>
         </h2>
-        <p class="section-desc" data-en>C&amp;P Korea Co., Ltd. is a Busan-based marine electronics and ICT company serving the global maritime industry. Led by an expert onboard commissioning specialist, we provide navigation and communication systems, maritime cyber resilience, and digital navigation solutions as an authorized NAVTOR dealer.</p>
-        <p class="section-desc" data-ko>씨앤피코리아(주)는 부산 영도구에 위치한 해양 전자·ICT 전문 기업입니다. 선내 시운전 전문가 출신 대표가 이끄는 당사는 항법·통신 시스템, 해양 사이버 보안, NAVTOR 공식 대리점으로서 디지털 항법 솔루션을 제공합니다.</p>
+        <p class="section-desc" data-en>C&amp;P Korea Co., Ltd. is a Busan-based marine electronics and IT company founded by an expert onboard commissioning specialist. We develop proprietary maritime systems and provide professional installation, integration, and R&amp;D consulting services for the global shipbuilding industry.</p>
+        <p class="section-desc" data-ko>씨앤피코리아(주)는 선내 시운전 전문가 출신 대표가 설립한 부산 영도구 소재 해양 전자·IT 전문 기업입니다. 자체 해양 시스템 개발과 함께 글로벌 조선 산업을 위한 전문 설치, 통합, R&amp;D 컨설팅 서비스를 제공합니다.</p>
+        <div style="margin-top:24px;">
+          <div class="about-ceo" data-en>
+            <span class="about-ceo-label">CEO &amp; Founder</span>
+            Jeong Won-seok — Onboard Commissioning Specialist
+          </div>
+          <div class="about-ceo" data-ko>
+            <span class="about-ceo-label">대표이사</span>
+            정 원석 — Onboard Commissioning Specialist
+          </div>
+        </div>
       </div>
       <div class="about-features reveal reveal-d2">
         <div class="about-feature">
-          <div class="about-feature-icon">🎯</div>
+          <div class="about-feature-icon">🔧</div>
           <div class="about-feature-title">
-            <span data-en>Minimize Downtime</span>
-            <span data-ko>가동 중단 최소화</span>
+            <span data-en>Proprietary Systems</span>
+            <span data-ko>자체 시스템 개발</span>
           </div>
           <div class="about-feature-text">
-            <span data-en>Rapid on-site response to keep your vessels operational.</span>
-            <span data-ko>신속한 현장 대응으로 선박 가동을 유지합니다.</span>
+            <span data-en>In-house developed marine IT products for shipbuilders and operators.</span>
+            <span data-ko>조선소 및 선박 운항사를 위한 자체 개발 해양 IT 제품 보유.</span>
           </div>
         </div>
         <div class="about-feature">
           <div class="about-feature-icon">🛡️</div>
           <div class="about-feature-title">
             <span data-en>Regulatory Compliance</span>
-            <span data-ko>규제 준수 보장</span>
+            <span data-ko>규제 준수</span>
           </div>
           <div class="about-feature-text">
             <span data-en>IMO, SOLAS, and cyber resilience compliance consulting.</span>
@@ -143,14 +155,14 @@
           </div>
         </div>
         <div class="about-feature">
-          <div class="about-feature-icon">📡</div>
+          <div class="about-feature-icon">🔬</div>
           <div class="about-feature-title">
-            <span data-en>Enhanced Safety</span>
-            <span data-ko>승무원 안전</span>
+            <span data-en>R&amp;D Expertise</span>
+            <span data-ko>R&amp;D 전문성</span>
           </div>
           <div class="about-feature-text">
-            <span data-en>Advanced marine electronics for crew situational awareness.</span>
-            <span data-ko>첨단 해양 전자 장비로 승무원 상황 인식을 강화합니다.</span>
+            <span data-en>Active R&amp;D with major Korean research institutes and universities.</span>
+            <span data-ko>국내 주요 연구기관 및 대학과의 적극적인 R&amp;D 협력.</span>
           </div>
         </div>
         <div class="about-feature">
@@ -160,8 +172,8 @@
             <span data-ko>글로벌 파트너십</span>
           </div>
           <div class="about-feature-text">
-            <span data-en>Official dealer for world-leading maritime technology brands.</span>
-            <span data-ko>세계 최고 해양 기술 브랜드의 공식 대리점.</span>
+            <span data-en>Authorized dealer for NAVTOR, Kongsberg, and Navis worldwide.</span>
+            <span data-ko>NAVTOR, Kongsberg, Navis 공식 대리점 운영.</span>
           </div>
         </div>
       </div>
@@ -174,24 +186,24 @@
   <div class="container">
     <div class="reveal">
       <div class="section-label">
-        <span data-en>What We Do</span>
-        <span data-ko>사업 영역</span>
+        <span data-en>Business Areas</span>
+        <span data-ko>업무 영역</span>
       </div>
       <h2 class="section-title">
-        <span data-en>Marine Technology Solutions</span>
-        <span data-ko>해양 기술 솔루션</span>
+        <span data-en>What We Do</span>
+        <span data-ko>씨앤피코리아의 사업 영역</span>
       </h2>
-      <p class="section-desc" data-en>Comprehensive marine electronics and ICT services tailored for modern vessels — from installation to cyber security.</p>
-      <p class="section-desc" data-ko>설치부터 사이버 보안까지, 현대 선박을 위한 종합 해양 전자·ICT 서비스.</p>
+      <p class="section-desc" data-en>From marine electronics installation to system integration and R&amp;D consulting — comprehensive maritime technology services.</p>
+      <p class="section-desc" data-ko>해양 전자 장비 설치부터 시스템 통합, R&amp;D 컨설팅까지 — 종합 해양 기술 서비스를 제공합니다.</p>
     </div>
     <div class="services-grid">
       <div class="svc-card reveal reveal-d1">
         <div class="svc-icon-wrap">🧭</div>
-        <span class="svc-sub">Electronics · Navigation · Safety</span>
-        <h3 data-en>Marine Electronics &amp; Safety</h3>
-        <h3 data-ko>해양 전자 &amp; 안전</h3>
-        <p class="svc-desc" data-en>Expert installation, commissioning, and repair of navigation and communication systems — GMDSS, AIS, ECDIS, radar, VDR and more.</p>
-        <p class="svc-desc" data-ko>GMDSS, AIS, ECDIS, 레이더, VDR 등 항법·통신 장비의 전문 설치, 시운전 및 수리 서비스.</p>
+        <span class="svc-sub">Navigation · Communication · Safety</span>
+        <h3 data-en>Marine Electronics</h3>
+        <h3 data-ko>해양 전자</h3>
+        <p class="svc-desc" data-en>Professional installation, commissioning, and repair of marine electronics — navigation systems, communication equipment, GMDSS, AIS, ECDIS, radar, VDR and more.</p>
+        <p class="svc-desc" data-ko>항법 시스템, 통신 장비, GMDSS, AIS, ECDIS, 레이더, VDR 등 해양 전자 장비의 전문 설치, 시운전 및 수리 서비스.</p>
         <div class="svc-tags">
           <span class="svc-tag">ECDIS</span>
           <span class="svc-tag">AIS</span>
@@ -201,32 +213,87 @@
         </div>
       </div>
       <div class="svc-card reveal reveal-d2">
-        <div class="svc-icon-wrap">🛡️</div>
-        <span class="svc-sub">ICT · Cyber Security · Infrastructure</span>
-        <h3 data-en>Maritime ICT &amp; Cyber Resilience</h3>
-        <h3 data-ko>해양 ICT &amp; 사이버 보안</h3>
-        <p class="svc-desc" data-en>Ship IT infrastructure design, network solutions, OT/IT integration, and IMO cyber resilience compliance consulting.</p>
-        <p class="svc-desc" data-ko>선박 IT 인프라 설계, 네트워크 솔루션, OT/IT 통합, IMO 사이버 보안 규정 준수 컨설팅.</p>
+        <div class="svc-icon-wrap">🖧</div>
+        <span class="svc-sub">IT · Network · Integration</span>
+        <h3 data-en>Marine System Integration</h3>
+        <h3 data-ko>해양 시스템 통합</h3>
+        <p class="svc-desc" data-en>Ship IT infrastructure design, network configuration and maintenance, OT/IT integration, and maritime cyber resilience for modern vessels.</p>
+        <p class="svc-desc" data-ko>선박 IT 인프라 설계, 네트워크 구성 및 유지보수, OT/IT 통합, 현대 선박을 위한 해양 사이버 보안.</p>
         <div class="svc-tags">
-          <span class="svc-tag">Cyber Security</span>
+          <span class="svc-tag">IT Network</span>
           <span class="svc-tag">OT/IT</span>
+          <span class="svc-tag">Cyber Security</span>
           <span class="svc-tag">IMO 2021</span>
-          <span class="svc-tag">Network</span>
         </div>
       </div>
       <div class="svc-card reveal reveal-d3">
-        <div class="svc-icon-wrap">🗺️</div>
-        <span class="svc-sub">e-Navigation · Charts · ENC</span>
-        <h3 data-en>NAVTOR Digital Navigation</h3>
-        <h3 data-ko>NAVTOR 디지털 항법</h3>
-        <p class="svc-desc" data-en>Authorized NAVTOR dealer providing digital charts, electronic publications, voyage planning tools, and vessel performance monitoring.</p>
-        <p class="svc-desc" data-ko>NAVTOR 공식 대리점으로 전자해도, 디지털 간행물, 항로 계획, 선박 성능 모니터링 솔루션 공급.</p>
+        <div class="svc-icon-wrap">🔬</div>
+        <span class="svc-sub">R&amp;D · Consulting · Certification</span>
+        <h3 data-en>R&amp;D Service &amp; Consulting</h3>
+        <h3 data-ko>R&amp;D 서비스 &amp; 컨설팅</h3>
+        <p class="svc-desc" data-en>Marine system R&amp;D in collaboration with leading Korean research institutes. IMO cyber resilience compliance, certification support, and maritime IT consulting.</p>
+        <p class="svc-desc" data-ko>국내 주요 연구기관과의 해양 시스템 R&amp;D, IMO 사이버 보안 준수, 인증 지원 및 해양 IT 컨설팅 서비스.</p>
         <div class="svc-tags">
-          <span class="svc-tag">NavStation</span>
-          <span class="svc-tag">ENC</span>
-          <span class="svc-tag">NavTracker</span>
-          <span class="svc-tag">e-NP</span>
+          <span class="svc-tag">R&amp;D</span>
+          <span class="svc-tag">Consulting</span>
+          <span class="svc-tag">Certification</span>
+          <span class="svc-tag">IMO</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">
+        <span data-en>Proprietary Products</span>
+        <span data-ko>자체 개발 제품</span>
+      </div>
+      <h2 class="section-title">
+        <span data-en>Marine IT Systems<br>Developed In-House</span>
+        <span data-ko>자체 개발<br>해양 IT 시스템</span>
+      </h2>
+      <p class="section-desc" data-en>C&amp;P Korea develops and supplies proprietary marine IT systems for shipbuilders, operators, and research institutions.</p>
+      <p class="section-desc" data-ko>씨앤피코리아는 조선소, 선박 운항사, 연구기관을 위한 자체 해양 IT 시스템을 개발·공급합니다.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal reveal-d1">
+        <div class="product-code">SG-1</div>
+        <h4 data-en>Serial Network Gateway</h4>
+        <h4 data-ko>직렬 네트워크 게이트웨이</h4>
+        <p data-en>Serial-to-network protocol conversion gateway for shipboard systems integration.</p>
+        <p data-ko>선내 시스템 통합을 위한 직렬-네트워크 프로토콜 변환 게이트웨이.</p>
+      </div>
+      <div class="product-card reveal reveal-d2">
+        <div class="product-code">EI-1</div>
+        <h4 data-en>Electronic Inspection Gauge</h4>
+        <h4 data-ko>전자 검사계</h4>
+        <p data-en>High-precision electronic measurement and inspection system for marine applications.</p>
+        <p data-ko>해양 응용을 위한 고정밀 전자 계측 및 검사 시스템.</p>
+      </div>
+      <div class="product-card reveal reveal-d2">
+        <div class="product-code">CIS-1</div>
+        <h4 data-en>Voyage Information System</h4>
+        <h4 data-ko>운항 정보 시스템</h4>
+        <p data-en>Integrated voyage data collection, display, and management system for the bridge.</p>
+        <p data-ko>선교용 통합 운항 데이터 수집·표시·관리 시스템.</p>
+      </div>
+      <div class="product-card reveal reveal-d3">
+        <div class="product-code">MIS-1</div>
+        <h4 data-en>Machinery Information System</h4>
+        <h4 data-ko>기계 정보 시스템</h4>
+        <p data-en>Real-time machinery monitoring and information management for engine room operations.</p>
+        <p data-ko>기관실 운용을 위한 실시간 기계 모니터링 및 정보 관리 시스템.</p>
+      </div>
+      <div class="product-card reveal reveal-d3">
+        <div class="product-code">MDM-1</div>
+        <h4 data-en>Marine Data Management</h4>
+        <h4 data-ko>해양 데이터 관리</h4>
+        <p data-en>Centralized maritime data acquisition, storage, and reporting platform for vessels.</p>
+        <p data-ko>선박용 중앙 집중식 해양 데이터 수집·저장·보고 플랫폼.</p>
       </div>
     </div>
   </div>
@@ -302,45 +369,68 @@
   <div class="container">
     <div class="reveal">
       <div class="section-label">
-        <span data-en>Technology Partners</span>
-        <span data-ko>기술 파트너</span>
+        <span data-en>Clients &amp; Partners</span>
+        <span data-ko>고객 &amp; 파트너</span>
       </div>
       <h2 class="section-title">
-        <span data-en>Global Partners We Represent</span>
-        <span data-ko>글로벌 파트너 공식 대리점</span>
+        <span data-en>Trusted by Industry Leaders</span>
+        <span data-ko>업계 선도 기업들이 신뢰하는 파트너</span>
       </h2>
-      <p class="section-desc" data-en>We partner with world-leading maritime technology companies to deliver cutting-edge solutions to Korean fleets.</p>
-      <p class="section-desc" data-ko>세계 최고의 해양 기술 기업들과 파트너십을 통해 국내 선단에 최첨단 솔루션을 제공합니다.</p>
     </div>
-    <div class="partners-grid">
-      <div class="partner-card reveal reveal-d1">
-        <div class="partner-logo-txt">NAVTOR</div>
-        <div class="partner-name">NAVTOR AS</div>
-        <p class="partner-desc" data-en>Norway-based world leader in digital navigation and e-navigation solutions for the maritime industry.</p>
-        <p class="partner-desc" data-ko>해양 디지털 항법·e-내비게이션 분야 세계 선두 기업 (노르웨이).</p>
-        <div class="partner-badge">
-          <span data-en>✦ Official Dealer</span>
-          <span data-ko>✦ 공식 대리점</span>
-        </div>
+
+    <!-- Major Clients -->
+    <div class="reveal" style="margin-top:48px;">
+      <div class="clients-label" data-en>Major Clients — Shipbuilders &amp; Government</div>
+      <div class="clients-label" data-ko>주요 고객 — 조선사 &amp; 정부·연구기관</div>
+      <div class="clients-grid">
+        <div class="client-item">현대중공업<br><small>Hyundai Heavy Industries</small></div>
+        <div class="client-item">DSME<br><small>대우조선해양</small></div>
+        <div class="client-item">삼성중공업<br><small>Samsung Heavy Industries</small></div>
+        <div class="client-item">한진중공업<br><small>Hanjin Heavy Industries</small></div>
+        <div class="client-item">현대BS&amp;C<br><small>Hyundai BS&amp;C</small></div>
+        <div class="client-item">산업통상자원부<br><small>MOTIE</small></div>
+        <div class="client-item">해양수산부<br><small>MOF Korea</small></div>
+        <div class="client-item">ETRI<br><small>한국전자통신연구원</small></div>
+        <div class="client-item">KIOST<br><small>한국해양과학기술원</small></div>
+        <div class="client-item">중소조선연구원<br><small>RIMS</small></div>
+        <div class="client-item">KOMERI<br><small>한국조선해양기자재연구원</small></div>
       </div>
-      <div class="partner-card reveal reveal-d2">
-        <div class="partner-logo-txt" style="color:#4B9CD3;">Orca AI</div>
-        <div class="partner-name">Orca AI</div>
-        <p class="partner-desc" data-en>AI-powered collision avoidance and maritime situational awareness technology for safer vessel operations.</p>
-        <p class="partner-desc" data-ko>AI 기반 충돌 회피 및 해양 상황 인식 기술로 선박 안전 운항을 지원합니다.</p>
-        <div class="partner-badge">
-          <span data-en>✦ Technology Partner</span>
-          <span data-ko>✦ 기술 파트너</span>
+    </div>
+
+    <!-- Tech Partners -->
+    <div class="reveal" style="margin-top:48px;">
+      <div class="clients-label" data-en>Technology Partners</div>
+      <div class="clients-label" data-ko>기술 파트너</div>
+      <div class="partners-grid">
+        <div class="partner-card reveal reveal-d1">
+          <div class="partner-logo-txt">NAVTOR</div>
+          <div class="partner-name">NAVTOR AS</div>
+          <p class="partner-desc" data-en>World leader in digital navigation and e-navigation solutions for the maritime industry (Norway).</p>
+          <p class="partner-desc" data-ko>해양 디지털 항법·e-내비게이션 분야 세계 선두 기업 (노르웨이).</p>
+          <div class="partner-badge">
+            <span data-en>✦ Official Dealer</span>
+            <span data-ko>✦ 공식 대리점</span>
+          </div>
         </div>
-      </div>
-      <div class="partner-card reveal reveal-d3">
-        <div class="partner-logo-txt" style="color:#8A6FD4;">NAVIS</div>
-        <div class="partner-name">Navis</div>
-        <p class="partner-desc" data-en>Leading provider of vessel stability management software and loading computer systems for the global fleet.</p>
-        <p class="partner-desc" data-ko>전 세계 선단을 위한 선박 복원성 관리 소프트웨어 및 적하 컴퓨터 시스템 선두 공급업체.</p>
-        <div class="partner-badge">
-          <span data-en>✦ Technology Partner</span>
-          <span data-ko>✦ 기술 파트너</span>
+        <div class="partner-card reveal reveal-d2">
+          <div class="partner-logo-txt" style="color:#C0392B;">KONGSBERG</div>
+          <div class="partner-name">Kongsberg Maritime</div>
+          <p class="partner-desc" data-en>Global maritime technology leader providing integrated bridge, automation, and dynamic positioning systems.</p>
+          <p class="partner-desc" data-ko>통합 선교, 자동화 및 동적 위치 시스템을 제공하는 글로벌 해양 기술 선두 기업.</p>
+          <div class="partner-badge">
+            <span data-en>✦ Technology Partner</span>
+            <span data-ko>✦ 기술 파트너</span>
+          </div>
+        </div>
+        <div class="partner-card reveal reveal-d3">
+          <div class="partner-logo-txt" style="color:#27AE60;">navis</div>
+          <div class="partner-name">Navis (Cargotec)</div>
+          <p class="partner-desc" data-en>Leading provider of vessel stability management software and loading computer systems for the global fleet.</p>
+          <p class="partner-desc" data-ko>전 세계 선단을 위한 선박 복원성 관리 소프트웨어 및 적하 컴퓨터 시스템 선두 공급업체.</p>
+          <div class="partner-badge">
+            <span data-en>✦ Technology Partner</span>
+            <span data-ko>✦ 기술 파트너</span>
+          </div>
         </div>
       </div>
     </div>
@@ -358,10 +448,10 @@
         </div>
         <h2 class="section-title">
           <span data-en>Let's Work Together</span>
-          <span data-ko>함께 만들어가는<br>해양 디지털 전환</span>
+          <span data-ko>함께 만들어가는<br>해양 디지털 미래</span>
         </h2>
-        <p class="section-desc" data-en>Contact us for technical services, NAVTOR product inquiries, or any maritime ICT project. We respond within 24 hours.</p>
-        <p class="section-desc" data-ko>기술 서비스, NAVTOR 제품 문의, 해양 ICT 프로젝트 등 어떤 내용이든 편하게 연락주세요. 24시간 내 회신드립니다.</p>
+        <p class="section-desc" data-en>Contact us for technical services, product inquiries, NAVTOR solutions, or R&amp;D partnerships. We respond within 24 hours.</p>
+        <p class="section-desc" data-ko>기술 서비스, 제품 문의, NAVTOR 솔루션, R&amp;D 파트너십 등 어떤 내용이든 편하게 연락주세요. 24시간 내 회신드립니다.</p>
         <div class="contact-items">
           <div class="contact-item">
             <div class="contact-item-icon">📞</div>
@@ -373,8 +463,11 @@
           <div class="contact-item">
             <div class="contact-item-icon">📠</div>
             <div>
-              <div class="contact-item-label">OFFICE</div>
-              <div class="contact-item-value"><a href="tel:+82514615071">+82-51-461-5071</a></div>
+              <div class="contact-item-label">OFFICE TEL / FAX</div>
+              <div class="contact-item-value">
+                <a href="tel:+82517170481">+82-51-717-0481</a><br>
+                <span style="color:var(--text-dim); font-size:13px;">Fax: +82-70-4850-8350</span>
+              </div>
             </div>
           </div>
           <div class="contact-item">
@@ -388,7 +481,10 @@
             <div class="contact-item-icon">📍</div>
             <div>
               <div class="contact-item-label">ADDRESS</div>
-              <div class="contact-item-value">71, #209 Yeongdo-gu<br>Busan 49055, South Korea</div>
+              <div class="contact-item-value">
+                절영로 71, 209호<br>부산광역시 영도구 49055<br>
+                <span style="color:var(--text-dim); font-size:13px;">71 Jeolyeong-ro #209, Yeongdo-gu, Busan</span>
+              </div>
             </div>
           </div>
         </div>
@@ -421,8 +517,9 @@
             <label data-en>Service of Interest</label><label data-ko>관심 서비스</label>
             <select name="service">
               <option value="">— Select / 서비스 선택 —</option>
-              <option value="Marine Electronics">Marine Electronics &amp; Safety</option>
-              <option value="Maritime ICT">Maritime ICT &amp; Cyber Resilience</option>
+              <option value="Marine Electronics">Marine Electronics</option>
+              <option value="Marine System Integration">Marine System Integration</option>
+              <option value="R&D Consulting">R&amp;D Service &amp; Consulting</option>
               <option value="NAVTOR Products">NAVTOR Products</option>
               <option value="Other">Other / 기타</option>
             </select>
@@ -455,21 +552,27 @@
              onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
         <span class="footer-logo-text">C&amp;P KOREA</span>
         <div class="footer-tagline" data-en>Marine Electronics &amp; ICT Solutions — Busan, Korea</div>
-        <div class="footer-tagline" data-ko>해양 전자 &amp; ICT 솔루션 — 부산</div>
+        <div class="footer-tagline" data-ko>해양 전자 &amp; ICT 솔루션 — 부산광역시 영도구</div>
+        <div style="margin-top:10px; font-size:12px; color:var(--text-x);">
+          <span data-en>CEO: Jeong Won-seok &nbsp;|&nbsp; Reg. No: 605-81-87761</span>
+          <span data-ko>대표: 정 원석 &nbsp;|&nbsp; 사업자번호: 605-81-87761</span>
+        </div>
       </div>
       <div class="footer-links">
-        <a href="#about"><span data-en>About</span><span data-ko>회사 소개</span></a>
-        <a href="#services"><span data-en>Services</span><span data-ko>서비스</span></a>
+        <a href="#about"><span data-en>About</span><span data-ko>소개</span></a>
+        <a href="#services"><span data-en>Services</span><span data-ko>업무</span></a>
+        <a href="#products"><span data-en>Products</span><span data-ko>제품</span></a>
         <a href="#navtor"><span data-en>NAVTOR</span><span data-ko>NAVTOR</span></a>
         <a href="#partners"><span data-en>Partners</span><span data-ko>파트너</span></a>
-        <a href="#contact"><span data-en>Contact</span><span data-ko>문의하기</span></a>
+        <a href="#contact"><span data-en>Contact</span><span data-ko>문의</span></a>
       </div>
     </div>
     <div class="footer-bottom">
       <div>© <?= date('Y') ?> C&amp;P Korea Co., Ltd. All rights reserved.</div>
       <div>
         <a href="mailto:sales@cp-korea.com" style="color:inherit;">sales@cp-korea.com</a>
-        &nbsp;|&nbsp; +82-51-461-5071
+        &nbsp;|&nbsp; Tel: +82-51-717-0481
+        &nbsp;|&nbsp; Fax: +82-70-4850-8350
       </div>
     </div>
   </div>

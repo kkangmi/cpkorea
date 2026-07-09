@@ -423,6 +423,69 @@ body.ko [data-ko] { display: revert; }
   font-size: 12.5px; color: var(--text-x);
 }
 
+/* ===== ABOUT CEO ===== */
+.about-ceo {
+  font-size: 14px; font-weight: 600; color: var(--text-dim);
+  margin-top: 6px;
+}
+.about-ceo-label {
+  display: inline-block; font-size: 10px; font-weight: 800;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--gold);
+  border: 1px solid var(--gold-bdr); background: var(--gold-bg);
+  border-radius: 4px; padding: 3px 8px; margin-right: 8px;
+}
+
+/* ===== PRODUCTS ===== */
+#products {
+  padding: 100px 0;
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.products-grid {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;
+  margin-top: 52px;
+}
+.product-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-top: 2px solid var(--gold-bdr); border-radius: var(--r);
+  padding: 24px 20px;
+  transition: border-top-color var(--trans), transform var(--trans), box-shadow var(--trans);
+}
+.product-card:hover {
+  border-top-color: var(--gold); transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.35);
+}
+.product-code {
+  font-size: 22px; font-weight: 900; color: var(--gold);
+  letter-spacing: -0.5px; margin-bottom: 10px;
+}
+.product-card h4 {
+  font-size: 13px; font-weight: 800; color: var(--white);
+  margin-bottom: 10px; line-height: 1.4;
+}
+.product-card p {
+  font-size: 12px; color: var(--text-dim); line-height: 1.7;
+}
+
+/* ===== CLIENTS GRID ===== */
+.clients-label {
+  font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--text-dim); margin-bottom: 20px;
+}
+.clients-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px;
+}
+.client-item {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 16px 14px;
+  font-size: 13px; font-weight: 700; color: var(--white);
+  line-height: 1.4; text-align: center;
+  transition: border-color var(--trans), background var(--trans);
+}
+.client-item:hover { border-color: var(--gold-bdr); background: var(--bg-card2, #102340); }
+.client-item small { display: block; font-size: 10px; font-weight: 500; color: var(--text-x); margin-top: 3px; }
+
 /* ===== REVEAL ===== */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -431,8 +494,14 @@ body.ko [data-ko] { display: revert; }
 .reveal-d3 { transition-delay: 0.30s; }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1100px) {
+  .products-grid { grid-template-columns: repeat(3, 1fr); }
+  .clients-grid { grid-template-columns: repeat(4, 1fr); }
+}
 @media (max-width: 900px) {
   .services-grid, .partners-grid { grid-template-columns: 1fr 1fr; }
+  .products-grid { grid-template-columns: repeat(3, 1fr); }
+  .clients-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 768px) {
   .nav-menu, .btn-nav { display: none; }
@@ -440,6 +509,8 @@ body.ko [data-ko] { display: revert; }
   .about-grid, .navtor-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-features { grid-template-columns: 1fr 1fr; }
   .services-grid, .partners-grid { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-stats { flex-direction: column; gap: 24px; padding-top: 32px; }
   .hero-stat {
     border-right: none; border-bottom: 1px solid var(--border);
@@ -451,8 +522,9 @@ body.ko [data-ko] { display: revert; }
   .form-row { grid-template-columns: 1fr; }
   .footer-top { flex-direction: column; gap: 24px; }
   .section { padding: 72px 0; }
+  #products, #navtor { padding: 72px 0; }
 }
 @media (max-width: 480px) {
-  .about-features, .navtor-products { grid-template-columns: 1fr; }
+  .about-features, .navtor-products, .products-grid, .clients-grid { grid-template-columns: 1fr; }
   .hero-h1 { letter-spacing: -1px; }
 }
