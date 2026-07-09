@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C&P Korea Co., Ltd. ??Marine Electronics & ICT Solutions</title>
+<meta name="description" content="C&P Korea provides marine electronics, maritime ICT & cyber resilience, and NAVTOR digital navigation solutions in Busan, South Korea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="assets/images/logo.png" alt="C&P Korea">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#services"  data-en="Services"  data-ko="?쒕퉬??>Services</a></li>
+      <li><a href="#navtor"   data-en="NAVTOR"    data-ko="NAVTOR">NAVTOR</a></li>
+      <li><a href="#partners" data-en="Partners"  data-ko="?뚰듃??>Partners</a></li>
+      <li><a href="#contact"  data-en="Contact"   data-ko="臾몄쓽?섍린">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-en active" onclick="setLang('en')">EN</button>
+        <button class="lang-ko" onclick="setLang('ko')">KO</button>
+      </div>
+      <a href="#contact" class="btn-nav" data-en="Get in Touch" data-ko="臾몄쓽?섍린">Get in Touch</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services"  onclick="closeMobile()" data-en="Services"  data-ko="?쒕퉬??>Services</a>
+    <a href="#navtor"   onclick="closeMobile()" data-en="NAVTOR"    data-ko="NAVTOR">NAVTOR</a>
+    <a href="#partners" onclick="closeMobile()" data-en="Partners"  data-ko="?뚰듃??>Partners</a>
+    <a href="#contact"  onclick="closeMobile()" data-en="Contact"   data-ko="臾몄쓽?섍린">Contact</a>
+    <div class="mobile-lang">
+      <button class="lang-en active" onclick="setLang('en'); closeMobile();">EN</button>
+      <button class="lang-ko" onclick="setLang('ko'); closeMobile();">KO</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="home">
+  <div id="hero">
+    <div class="hero-dots"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span data-en>Marine Electronics &amp; ICT Solutions</span>
+        <span data-ko>?댁뼇 ?꾩옄 &amp; ICT ?붾（??/span>
+      </div>
+      <h1 class="hero-title">
+        <span data-en>Your Trusted Partner<br>for <span class="accent">Smart Vessels</span><br><span class="dim">&amp; Digital Navigation</span></span>
+        <span data-ko>?ㅻ쭏???좊컯怨?br><span class="accent">?붿?????쾿</span>???꾪븳<br><span class="dim">?좊ː?????덈뒗 ?뚰듃??/span></span>
+      </h1>
+      <p class="hero-sub" data-en>C&amp;P Korea delivers expert marine electronics, maritime ICT, cyber resilience, and NAVTOR digital navigation solutions from Busan to every ocean.</p>
+      <p class="hero-sub" data-ko>?⑥븻?쇱퐫由ъ븘??遺?곗뿉?????멸퀎 ?댁뿭源뚯?, ?댁뼇 ?꾩옄 湲곗닠쨌ICT쨌?ъ씠踰?蹂댁븞쨌NAVTOR ?붿?????쾿 ?붾（?섏쓣 ?쒓났?⑸땲??</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-primary">
+          <span data-en>Our Services</span><span data-ko>?쒕퉬??蹂닿린</span>
+          <i class="fa fa-arrow-right" style="font-size:12px;"></i>
+        </a>
+        <a href="#contact" class="btn-outline">
+          <span data-en>Request a Quote</span><span data-ko>寃ъ쟻 臾몄쓽</span>
+        </a>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num"><data-count="15" style="font-size:inherit;font-weight:inherit;color:inherit;"><span data-count="15">15</span>+</div>
+          <div class="hero-stat-label" data-en>Years Experience</div>
+          <div class="hero-stat-label" data-ko>???낅젰</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">NAVTOR</div>
+          <div class="hero-stat-label" data-en>Authorized Dealer</div>
+          <div class="hero-stat-label" data-ko>怨듭떇 ?由ъ젏</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">ISO</div>
+          <div class="hero-stat-label" data-en>Certified Engineers</div>
+          <div class="hero-stat-label" data-ko>怨듭씤 ?붿??덉뼱</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">24/7</div>
+          <div class="hero-stat-label" data-en>Technical Support</div>
+          <div class="hero-stat-label" data-ko>湲곗닠 吏??/div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-bar"></div>
+      <span>SCROLL</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label" data-en>What We Do</div>
+      <div class="section-label" data-ko>?ъ뾽 ?곸뿭</div>
+      <h2 class="section-title" data-en>Marine Technology<br>Solutions</h2>
+      <h2 class="section-title" data-ko>?댁뼇 湲곗닠<br>?붾（??/h2>
+      <p class="section-desc" data-en>Comprehensive marine electronics and ICT services tailored for modern vessels ??from installation to cyber security.</p>
+      <p class="section-desc" data-ko>?ㅼ튂遺???ъ씠踰?蹂댁븞源뚯? ?꾨? ?좊컯??理쒖쟻?붾맂 醫낇빀 ?댁뼇 ?꾩옄쨌ICT ?쒕퉬?ㅻ? ?쒓났?⑸땲??</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card c1 reveal reveal-d1">
+        <div class="svc-icon">?㎛</div>
+        <h3 data-en>Marine Electronics &amp; Safety</h3>
+        <h3 data-ko>?댁뼇 ?꾩옄 &amp; ?덉쟾</h3>
+        <div class="svc-sub">Electronics 쨌 Navigation 쨌 Safety</div>
+        <p class="svc-desc" data-en>Expert installation, commissioning, and technical repair of navigation and communication systems, GMDSS equipment, AIS, ECDIS, radar, and more.</p>
+        <p class="svc-desc" data-ko>??쾿쨌?듭떊 ?쒖뒪?? GMDSS, AIS, ECDIS, ?덉씠?????댁뼇 ?꾩옄 ?λ퉬???꾨Ц ?ㅼ튂, ?쒖슫??諛?湲곗닠 ?섎━ ?쒕퉬?ㅻ? ?쒓났?⑸땲??</p>
+        <div class="svc-tags">
+          <span class="svc-tag">ECDIS</span>
+          <span class="svc-tag">AIS</span>
+          <span class="svc-tag">GMDSS</span>
+          <span class="svc-tag">Radar</span>
+          <span class="svc-tag">VDR</span>
+        </div>
+      </div>
+      <div class="svc-card c2 reveal reveal-d2">
+        <div class="svc-icon">?썳截?/div>
+        <h3 data-en>Maritime ICT &amp; Cyber Resilience</h3>
+        <h3 data-ko>?댁뼇 ICT &amp; ?ъ씠踰?蹂댁븞</h3>
+        <div class="svc-sub">ICT 쨌 Cyber Security 쨌 Infrastructure</div>
+        <p class="svc-desc" data-en>Ship IT infrastructure design and implementation, network solutions, OT/IT integration, and IMO cyber resilience compliance consulting.</p>
+        <p class="svc-desc" data-ko>?좊컯 IT ?명봽???ㅺ퀎쨌援ъ텞, ?ㅽ듃?뚰겕 ?붾（?? OT/IT ?듯빀, IMO ?ъ씠踰?蹂댁븞 洹쒖젙 以??而⑥꽕?낆쓣 ?쒓났?⑸땲??</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Cyber Security</span>
+          <span class="svc-tag">OT/IT</span>
+          <span class="svc-tag">IMO 2021</span>
+          <span class="svc-tag">Network</span>
+        </div>
+      </div>
+      <div class="svc-card c3 reveal reveal-d3">
+        <div class="svc-icon">?뿺截?/div>
+        <h3 data-en>NAVTOR Digital Navigation</h3>
+        <h3 data-ko>NAVTOR ?붿?????쾿</h3>
+        <div class="svc-sub">e-Navigation 쨌 Digital Charts 쨌 ENC</div>
+        <p class="svc-desc" data-en>Authorized NAVTOR dealer providing digital charts, electronic publications, voyage planning tools, and vessel performance monitoring solutions.</p>
+        <p class="svc-desc" data-ko>NAVTOR 怨듭떇 ?由ъ젏?쇰줈???꾩옄?대룄, ?붿?????빐 媛꾪뻾臾? ??줈 怨꾪쉷, ?좊컯 ?깅뒫 紐⑤땲?곕쭅 ?붾（?섏쓣 怨듦툒?⑸땲??</p>
+        <div class="svc-tags">
+          <span class="svc-tag">NavStation</span>
+          <span class="svc-tag">ENC</span>
+          <span class="svc-tag">NavTracker</span>
+          <span class="svc-tag">e-NP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NAVTOR FEATURE ===== -->
+<section id="navtor" class="section">
+  <div class="container">
+    <div class="navtor-inner">
+      <div class="navtor-logo-wrap reveal">
+        <img src="assets/images/navtor_logo.png" alt="NAVTOR" class="navtor-logo"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div style="display:none; font-size:28px; font-weight:900; color:#fff; letter-spacing:-1px;">NAVTOR</div>
+        <div class="navtor-badge">
+          <span data-en>??Authorized Dealer ??South Korea</span>
+          <span data-ko>??怨듭떇 ?由ъ젏 ????쒕?援?/span>
+        </div>
+        <div class="navtor-products">
+          <div class="navtor-product">
+            <div class="navtor-product-icon">?뿺截?/div>
+            <div class="navtor-product-name">NavStation</div>
+            <div class="navtor-product-desc" data-en>e-Navigation platform for bridge operations</div>
+            <div class="navtor-product-desc" data-ko>?좉탳??e-?대퉬寃뚯씠???뚮옯??/div>
+          </div>
+          <div class="navtor-product">
+            <div class="navtor-product-icon">?뱤</div>
+            <div class="navtor-product-name">NavTracker</div>
+            <div class="navtor-product-desc" data-en>Vessel performance & fleet management</div>
+            <div class="navtor-product-desc" data-ko>?좊컯 ?깅뒫 諛??좊떒 愿由?/div>
+          </div>
+          <div class="navtor-product">
+            <div class="navtor-product-icon">?뱰</div>
+            <div class="navtor-product-name">e-NP</div>
+            <div class="navtor-product-desc" data-en>Digital nautical publications</div>
+            <div class="navtor-product-desc" data-ko>?붿?????빐 媛꾪뻾臾?/div>
+          </div>
+          <div class="navtor-product">
+            <div class="navtor-product-icon">?뙋</div>
+            <div class="navtor-product-name">ENC / Charts</div>
+            <div class="navtor-product-desc" data-en>Global digital charts & updates</div>
+            <div class="navtor-product-desc" data-ko>湲濡쒕쾶 ?꾩옄?대룄 怨듦툒 諛??낅뜲?댄듃</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="section-label" data-en>Featured Partnership</div>
+        <div class="section-label" data-ko>二쇱슂 ?뚰듃?덉떗</div>
+        <h2 class="section-title light" data-en>NAVTOR Official<br>Dealer in Korea</h2>
+        <h2 class="section-title light" data-ko>NAVTOR<br>?쒓뎅 怨듭떇 ?由ъ젏</h2>
+        <p class="section-desc light" data-en>As NAVTOR's authorized dealer in South Korea, C&amp;P Korea provides the full range of NAVTOR's world-leading e-navigation solutions ??from digital charts and electronic publications to vessel performance monitoring.</p>
+        <p class="section-desc light" data-ko>?⑥븻?쇱퐫由ъ븘??NAVTOR????쒕?援?怨듭떇 ?由ъ젏?쇰줈?? ?꾩옄?대룄遺???붿?????빐 媛꾪뻾臾? ?좊컯 ?깅뒫 紐⑤땲?곕쭅源뚯? NAVTOR???멸퀎 理쒓퀬 ?섏? e-?대퉬寃뚯씠???붾（?????쒗뭹??怨듦툒?⑸땲??</p>
+        <div style="margin-top: 32px;">
+          <a href="#contact" class="btn-primary">
+            <span data-en>Inquire About NAVTOR Products</span>
+            <span data-ko>NAVTOR ?쒗뭹 臾몄쓽?섍린</span>
+            <i class="fa fa-arrow-right" style="font-size:12px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTNERS ===== -->
+<section id="partners" class="section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label" data-en>Technology Partners</div>
+      <div class="section-label" data-ko>湲곗닠 ?뚰듃??/div>
+      <h2 class="section-title" data-en>Global Partners<br>We Represent</h2>
+      <h2 class="section-title" data-ko>湲濡쒕쾶 ?뚰듃??br>怨듭떇 ?由ъ젏</h2>
+      <p class="section-desc" data-en>We partner with world-leading maritime technology companies to deliver cutting-edge solutions to Korean fleets.</p>
+      <p class="section-desc" data-ko>?멸퀎 理쒓퀬???댁뼇 湲곗닠 湲곗뾽?ㅺ낵 ?뚰듃?덉떗???듯빐 援?궡 ?좊떒??理쒖꺼???붾（?섏쓣 ?쒓났?⑸땲??</p>
+    </div>
+    <div class="partners-grid" style="margin-top: 52px;">
+      <div class="partner-card reveal reveal-d1">
+        <div class="partner-logo-wrap">
+          <div class="partner-logo-txt">NAVTOR</div>
+        </div>
+        <div class="partner-name">NAVTOR AS</div>
+        <p class="partner-desc" data-en>Norway-based world leader in digital navigation and e-navigation solutions for the maritime industry.</p>
+        <p class="partner-desc" data-ko>?댁뼇 ?곗뾽???꾪븳 ?붿?????쾿쨌e-?대퉬寃뚯씠???붾（??遺꾩빞 ?멸퀎 ?좊몢 湲곗뾽 (?몃Ⅴ?⑥씠).</p>
+        <div class="partner-tag" data-en>Official Dealer</div>
+        <div class="partner-tag" data-ko>怨듭떇 ?由ъ젏</div>
+      </div>
+      <div class="partner-card reveal reveal-d2">
+        <div class="partner-logo-wrap">
+          <div class="partner-logo-txt" style="color:#0B5EA8;">Orca AI</div>
+        </div>
+        <div class="partner-name">Orca AI</div>
+        <p class="partner-desc" data-en>AI-powered collision avoidance and maritime situational awareness technology for safer vessel operations.</p>
+        <p class="partner-desc" data-ko>AI 湲곕컲 異⑸룎 ?뚰뵾 諛??댁뼇 ?곹솴 ?몄떇 湲곗닠濡??좊컯 ?댄빆 ?덉쟾?깆쓣 ?믪엯?덈떎.</p>
+        <div class="partner-tag" data-en>Technology Partner</div>
+        <div class="partner-tag" data-ko>湲곗닠 ?뚰듃??/div>
+      </div>
+      <div class="partner-card reveal reveal-d3">
+        <div class="partner-logo-wrap">
+          <div class="partner-logo-txt" style="color:#7C3AED;">NAVIS</div>
+        </div>
+        <div class="partner-name">Navis</div>
+        <p class="partner-desc" data-en>Leading provider of vessel stability management software and loading computer systems for the global fleet.</p>
+        <p class="partner-desc" data-ko>???멸퀎 ?좊떒???꾪븳 ?좊컯 蹂듭썝??愿由??뚰봽?몄썾??諛??곹븯 而댄벂???쒖뒪???좊몢 怨듦툒?낆껜.</p>
+        <div class="partner-tag" data-en>Technology Partner</div>
+        <div class="partner-tag" data-ko>湲곗닠 ?뚰듃??/div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="section-label" data-en>Get in Touch</div>
+        <div class="section-label" data-ko>臾몄쓽?섍린</div>
+        <h2 class="section-title light" data-en>Let's Work<br>Together</h2>
+        <h2 class="section-title light" data-ko>?④퍡 留뚮뱾?닿???br>?댁뼇 ?붿????꾪솚</h2>
+        <p class="section-desc light" data-en>Contact us for technical services, NAVTOR product inquiries, or any maritime ICT project. We respond within 24 hours.</p>
+        <p class="section-desc light" data-ko>湲곗닠 ?쒕퉬?? NAVTOR ?쒗뭹 臾몄쓽, ?댁뼇 ICT ?꾨줈?앺듃 ???대뼡 ?댁슜?대뱺 ?명븯寃??곕씫二쇱꽭?? 24?쒓컙 ???뚯떊?쒕┰?덈떎.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">?뱸</div>
+            <div>
+              <div class="contact-item-label">PHONE / WHATSAPP</div>
+              <div class="contact-item-value"><a href="tel:+821033975231">+82-10-3397-5231</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">?됵툘</div>
+            <div>
+              <div class="contact-item-label">EMAIL</div>
+              <div class="contact-item-value"><a href="mailto:sales@cp-korea.com">sales@cp-korea.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">?뱧</div>
+            <div>
+              <div class="contact-item-label">ADDRESS</div>
+              <div class="contact-item-value">71, #209 Yeongdo-gu<br>Busan 49055, South Korea</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal reveal-d2">
+        <h3 data-en>Send an Inquiry</h3>
+        <h3 data-ko>臾몄쓽 蹂대궡湲?/h3>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label data-en>Name *</label><label data-ko>?대쫫 *</label>
+              <input type="text" name="name" required placeholder="John Smith">
+            </div>
+            <div class="form-group">
+              <label data-en>Company</label><label data-ko>?뚯궗紐?/label>
+              <input type="text" name="company" placeholder="Company Ltd.">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-en>Email *</label><label data-ko>?대찓??*</label>
+              <input type="email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label data-en>Phone / WhatsApp</label><label data-ko>?꾪솕 / ?볦툩??/label>
+              <input type="tel" name="phone" placeholder="+82-10-0000-0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-en>Service of Interest</label><label data-ko>愿???쒕퉬??/label>
+            <select name="service">
+              <option value="" data-en>Select a service</option>
+              <option value="" data-ko>?쒕퉬???좏깮</option>
+              <option value="Marine Electronics" data-en>Marine Electronics &amp; Safety</option>
+              <option value="?댁뼇 ?꾩옄 諛??덉쟾" data-ko>?댁뼇 ?꾩옄 諛??덉쟾</option>
+              <option value="Maritime ICT" data-en>Maritime ICT &amp; Cyber Resilience</option>
+              <option value="?댁뼇 ICT 諛??ъ씠踰?蹂댁븞" data-ko>?댁뼇 ICT 諛??ъ씠踰?蹂댁븞</option>
+              <option value="NAVTOR Products" data-en>NAVTOR Products</option>
+              <option value="NAVTOR ?쒗뭹" data-ko>NAVTOR ?쒗뭹</option>
+              <option value="Other" data-en>Other</option>
+              <option value="湲고?" data-ko>湲고?</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-en>Message *</label><label data-ko>臾몄쓽 ?댁슜 *</label>
+            <textarea name="message" rows="5" required
+              placeholder="Please describe your requirements..."></textarea>
+          </div>
+          <p class="form-notice" data-en>We will reply to your inquiry within 24 hours.</p>
+          <p class="form-notice" data-ko>24?쒓컙 ?댁뿉 ?뚯떊?쒕━寃좎뒿?덈떎.</p>
+          <button type="submit" class="btn-submit">
+            <span data-en>Send Inquiry</span><span data-ko>臾몄쓽 蹂대궡湲?/span>
+          </button>
+          <div id="formSuccess" class="form-success">
+            <span data-en>??Thank you! Your inquiry has been sent. We'll get back to you shortly.</span>
+            <span data-ko>??臾몄쓽媛 ?묒닔?섏뿀?듬땲?? 鍮좊Ⅸ ?쒖씪 ???곕씫?쒕━寃좎뒿?덈떎.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <img src="assets/images/logo_white.png" alt="C&P Korea" class="footer-logo" style="height:38px; margin-bottom:10px;">
+        <div class="footer-tagline" data-en>Marine Electronics &amp; ICT Solutions ??Busan, Korea</div>
+        <div class="footer-tagline" data-ko>?댁뼇 ?꾩옄 &amp; ICT ?붾（????遺??/div>
+      </div>
+      <div class="footer-links">
+        <a href="#services"  data-en="Services"  data-ko="?쒕퉬??>Services</a>
+        <a href="#navtor"   data-en="NAVTOR"    data-ko="NAVTOR">NAVTOR</a>
+        <a href="#partners" data-en="Partners"  data-ko="?뚰듃??>Partners</a>
+        <a href="#contact"  data-en="Contact"   data-ko="臾몄쓽?섍린">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>짤 2026 C&amp;P Korea Co., Ltd. All rights reserved.</div>
+      <div><a href="mailto:sales@cp-korea.com" style="color:inherit; transition:color 0.2s;">sales@cp-korea.com</a> &nbsp;|&nbsp; +82-10-3397-5231</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+/* data-en / data-ko attribute text update */
+function applyLangAttr() {
+  document.querySelectorAll('[data-en][data-ko]').forEach(el => {
+    if (typeof el.getAttribute('data-en') === 'string' && el.getAttribute('data-en') !== '') {
+      el.textContent = lang === 'ko' ? el.getAttribute('data-ko') : el.getAttribute('data-en');
+    }
+  });
+}
+const _origSetLang = setLang;
+setLang = function(l) { _origSetLang(l); applyLangAttr(); };
+applyLangAttr();
+</script>
+</body>
+</html>
+
