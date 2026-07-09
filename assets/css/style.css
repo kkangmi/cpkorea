@@ -37,6 +37,11 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .section { padding: 64px 0; }
 .section-alt { background: var(--bg-2); }
 
+/* Section gradient overrides — 웨이브 연결 + 섹션 리듬 */
+#about    { background: linear-gradient(180deg, #C8DFFA 0%, var(--bg-2) 12%); }
+#services { background: linear-gradient(180deg, #FFFFFF 0%, #EDF5FF 100%); }
+#products { background: linear-gradient(180deg, var(--bg-2) 0%, #DCF0FF 100%); }
+
 /* ===== LANGUAGE ===== */
 [data-ko] { display: none; }
 body.ko [data-en] { display: none; }
