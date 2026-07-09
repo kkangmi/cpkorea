@@ -421,7 +421,7 @@
         </div>
         <div class="partner-card reveal reveal-d2">
           <a href="https://www.orca-ai.io/" target="_blank" rel="noopener" class="partner-logo-wrap">
-            <img src="assets/images/logos/orca.svg" alt="Orca AI">
+            <img src="assets/images/logos/orca.png" alt="Orca AI">
           </a>
           <p class="partner-desc">
             <span data-en>AI-powered collision avoidance solution for commercial vessels. Orca AI's deep learning system enhances situational awareness and navigational safety at sea.</span>
