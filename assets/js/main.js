@@ -110,7 +110,7 @@ if (contactForm) {
   const canvas = document.getElementById('heroCanvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  const COUNT = 55, LINK = 130;
+  const COUNT = window.innerWidth < 768 ? 28 : 55, LINK = 130;
   let W, H, pts = [];
 
   function resize() {

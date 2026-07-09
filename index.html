@@ -68,6 +68,9 @@
       <line x1="26" y1="250" x2="474" y2="250" stroke="rgba(8,145,178,.06)" stroke-width="1"/>
       <line x1="91" y1="91" x2="409" y2="409" stroke="rgba(8,145,178,.04)" stroke-width="1"/>
       <line x1="409" y1="91" x2="91" y2="409" stroke="rgba(8,145,178,.04)" stroke-width="1"/>
+      <circle class="radar-pulse p1" cx="250" cy="250" r="8" fill="none" stroke="rgba(8,145,178,.55)" stroke-width="1.5"/>
+      <circle class="radar-pulse p2" cx="250" cy="250" r="8" fill="none" stroke="rgba(8,145,178,.55)" stroke-width="1.5"/>
+      <circle class="radar-pulse p3" cx="250" cy="250" r="8" fill="none" stroke="rgba(8,145,178,.55)" stroke-width="1.5"/>
       <g class="radar-sweep">
         <path d="M250,250 L250,27 A223,223 0 0,1 291,35 Z" fill="rgba(8,145,178,.07)"/>
         <line x1="250" y1="250" x2="250" y2="27" stroke="rgba(8,145,178,.50)" stroke-width="2"/>
@@ -371,62 +374,50 @@
       </div>
       <div class="clients-grid">
         <div class="client-item reveal reveal-d1">
-          <div class="client-logo-wrap"><img src="assets/images/logos/hhi.svg" alt="현대중공업"></div>
           <div class="client-name">현대중공업</div>
           <div class="client-sub">Hyundai Heavy Industries</div>
         </div>
         <div class="client-item reveal reveal-d1">
-          <div class="client-logo-wrap"><img src="assets/images/logos/dsme.svg" alt="DSME"></div>
           <div class="client-name">DSME</div>
           <div class="client-sub">대우조선해양</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap"><img src="assets/images/logos/samsungshi.png" alt="삼성중공업"></div>
           <div class="client-name">삼성중공업</div>
           <div class="client-sub">Samsung Heavy Industries</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap"><img src="assets/images/logos/hanjin.svg" alt="한진중공업"></div>
           <div class="client-name">한진중공업</div>
           <div class="client-sub">Hanjin Heavy Industries</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap"><img src="assets/images/logos/hbsc.svg" alt="현대BS&amp;C"></div>
           <div class="client-name">현대BS&amp;C</div>
           <div class="client-sub">Hyundai BS&C</div>
         </div>
         <div class="client-item reveal reveal-d3">
-          <div class="client-logo-wrap"><img src="assets/images/logos/motie.svg" alt="산업통상자원부"></div>
           <div class="client-name">산업통상자원부</div>
           <div class="client-sub">MOTIE</div>
         </div>
         <div class="client-item reveal reveal-d1">
-          <div class="client-logo-wrap"><img src="assets/images/logos/mof.svg" alt="해양수산부"></div>
           <div class="client-name">해양수산부</div>
           <div class="client-sub">MOF Korea</div>
         </div>
         <div class="client-item reveal reveal-d1">
-          <div class="client-logo-wrap"><img src="assets/images/logos/etri.svg" alt="ETRI"></div>
           <div class="client-name">ETRI</div>
           <div class="client-sub">전자통신연구원</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap"><img src="assets/images/logos/kiost.svg" alt="KIOST"></div>
           <div class="client-name">KIOST</div>
           <div class="client-sub">한국해양과학기술원</div>
         </div>
         <div class="client-item reveal reveal-d2">
-          <div class="client-logo-wrap"><img src="assets/images/logos/rims.svg" alt="중소조선연구원"></div>
           <div class="client-name">중소조선연구원</div>
           <div class="client-sub">RIMS</div>
         </div>
         <div class="client-item reveal reveal-d3">
-          <div class="client-logo-wrap"><img src="assets/images/logos/komeri.svg" alt="KOMERI"></div>
           <div class="client-name">KOMERI</div>
           <div class="client-sub">한국선박기자재연구원</div>
         </div>
         <div class="client-item reveal reveal-d3">
-          <div class="client-logo-wrap"><img src="assets/images/logos/kongsberg.svg" alt="Kongsberg"></div>
           <div class="client-name">Kongsberg</div>
           <div class="client-sub">콩스버그</div>
         </div>
