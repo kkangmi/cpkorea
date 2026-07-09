@@ -415,11 +415,9 @@
       </div>
       <div class="partners-grid">
         <div class="partner-card reveal reveal-d1">
-          <div class="partner-logo-wrap">
+          <a href="https://www.navtor.com/" target="_blank" rel="noopener" class="partner-logo-wrap">
             <img src="assets/images/logos/navtor.png" alt="NAVTOR">
-          </div>
-          <div class="partner-logo-txt">NAVTOR</div>
-          <div class="partner-name">navtor.com</div>
+          </a>
           <p class="partner-desc">
             <span data-en>Digital navigation services — ENC, voyage planning, and NavStation platform. C&P Korea is the official authorized dealer for South Korea.</span>
             <span data-ko>디지털 항법 서비스 — ENC, 항해 계획, NavStation 플랫폼. 씨앤피코리아는 공식 국내 공급 딜러입니다.</span>
@@ -427,11 +425,9 @@
           <span class="partner-badge">&#10003; <span data-en>Official Dealer &mdash; South Korea</span><span data-ko>공식 딜러 &mdash; 대한민국</span></span>
         </div>
         <div class="partner-card reveal reveal-d2">
-          <div class="partner-logo-wrap">
-            <img src="assets/images/logos/hammar.svg" alt="Hammar">
-          </div>
-          <div class="partner-logo-txt">Hammar</div>
-          <div class="partner-name">hammar.com</div>
+          <a href="https://www.hammar.com/" target="_blank" rel="noopener" class="partner-logo-wrap">
+            <img src="assets/images/logos/hammar.png" alt="Hammar">
+          </a>
           <p class="partner-desc">
             <span data-en>Swedish manufacturer of hydrostatic releases and marine safety equipment. Trusted globally for life-saving appliance systems on commercial vessels.</span>
             <span data-ko>스웨덴의 수압 이탈기 및 선박 안전장비 전문 제조사. 상업선의 구명 장비 시스템 분야에서 세계적으로 신뢰받고 있습니다.</span>
@@ -439,11 +435,9 @@
           <span class="partner-badge">&#128279; <span data-en>Technology Partner</span><span data-ko>기술 파트너</span></span>
         </div>
         <div class="partner-card reveal reveal-d3">
-          <div class="partner-logo-wrap">
-            <img src="assets/images/logos/navis.svg" alt="Navis">
-          </div>
-          <div class="partner-logo-txt">Navis</div>
-          <div class="partner-name">navis.com (Cargotec)</div>
+          <a href="https://www.navis.com/" target="_blank" rel="noopener" class="partner-logo-wrap">
+            <img src="assets/images/logos/navis.png" alt="Navis">
+          </a>
           <p class="partner-desc">
             <span data-en>Global leader in terminal and vessel management software. Integration partner for port logistics and cargo handling system connectivity.</span>
             <span data-ko>항만 및 선박 관리 소프트웨어 분야 글로벌 리더. 항만 물류 및 화물 처리 시스템 연동 파트너.</span>

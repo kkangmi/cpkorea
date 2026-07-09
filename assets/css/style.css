@@ -320,14 +320,12 @@ body.ko [data-ko] { display: revert; }
 .partner-card:hover { box-shadow: var(--shadow-hv); transform: translateY(-3px); }
 .partner-logo-wrap {
   height: 52px; display: flex; align-items: center; margin-bottom: 14px;
+  transition: opacity var(--trans);
 }
+a.partner-logo-wrap:hover { opacity: .75; }
 .partner-logo-wrap img {
   max-height: 48px; max-width: 140px; width: auto; height: auto;
   object-fit: contain;
-}
-.partner-logo-txt {
-  font-size: 20px; font-weight: 900; color: var(--navy);
-  letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .partner-name { font-size: 11.5px; font-weight: 700; color: var(--teal); margin-bottom: 10px; }
 .partner-desc { font-size: 13px; color: var(--text-dim); line-height: 1.75; margin-bottom: 14px; }
