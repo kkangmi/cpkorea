@@ -357,6 +357,7 @@
         <div class="client-item reveal reveal-d2">KIOST<small>한국해양과학기술원</small></div>
         <div class="client-item reveal reveal-d2">중소조선연구원<small>RIMS</small></div>
         <div class="client-item reveal reveal-d3">KOMERI<small>한국선박기자재연구원</small></div>
+        <div class="client-item reveal reveal-d3">Kongsberg<small>콩스버그</small></div>
       </div>
     </div>
 
