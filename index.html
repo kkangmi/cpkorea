@@ -55,6 +55,30 @@
 
 <!-- ===== HERO ===== -->
 <section id="hero">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-deco" aria-hidden="true">
+    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="225" stroke="rgba(8,145,178,.07)" stroke-width="1.5"/>
+      <circle cx="250" cy="250" r="180" stroke="rgba(8,145,178,.08)" stroke-width="1"/>
+      <circle cx="250" cy="250" r="135" stroke="rgba(21,101,192,.10)" stroke-width="1"/>
+      <circle cx="250" cy="250" r="90" stroke="rgba(21,101,192,.13)" stroke-width="1.5"/>
+      <circle cx="250" cy="250" r="45" stroke="rgba(21,101,192,.16)" stroke-width="1.5"/>
+      <circle cx="250" cy="250" r="8" fill="rgba(21,101,192,.22)"/>
+      <line x1="250" y1="26" x2="250" y2="474" stroke="rgba(8,145,178,.06)" stroke-width="1"/>
+      <line x1="26" y1="250" x2="474" y2="250" stroke="rgba(8,145,178,.06)" stroke-width="1"/>
+      <line x1="91" y1="91" x2="409" y2="409" stroke="rgba(8,145,178,.04)" stroke-width="1"/>
+      <line x1="409" y1="91" x2="91" y2="409" stroke="rgba(8,145,178,.04)" stroke-width="1"/>
+      <g class="radar-sweep">
+        <path d="M250,250 L250,27 A223,223 0 0,1 291,35 Z" fill="rgba(8,145,178,.07)"/>
+        <line x1="250" y1="250" x2="250" y2="27" stroke="rgba(8,145,178,.50)" stroke-width="2"/>
+      </g>
+      <circle cx="318" cy="152" r="4" fill="rgba(8,145,178,.55)"/>
+      <circle cx="174" cy="318" r="3" fill="rgba(21,101,192,.45)"/>
+      <circle cx="358" cy="298" r="2.5" fill="rgba(8,145,178,.38)"/>
+      <circle cx="162" cy="188" r="2.5" fill="rgba(21,101,192,.35)"/>
+      <circle cx="292" cy="112" r="2" fill="rgba(8,145,178,.28)"/>
+    </svg>
+  </div>
   <div class="container">
     <div class="hero-content reveal">
       <div class="hero-eyebrow">
@@ -105,6 +129,11 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="hero-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,35 C180,65 360,5 540,35 C720,65 900,5 1080,35 C1260,65 1380,20 1440,35 L1440,70 L0,70 Z" fill="#EFF7FF"/>
+    </svg>
   </div>
 </section>
 
