@@ -124,12 +124,7 @@
           <span data-en>Founded in Busan — South Korea's shipbuilding capital — C&P Korea has built a reputation for precision, reliability, and deep technical expertise in onboard electronic systems. From commissioning to consulting, we keep your vessels running at peak performance.</span>
           <span data-ko>대한민국 조선 1번지 부산에서 시작된 씨앤피코리아는 선박 전자 시스템 분야에서 정밀성과 기술력으로 명성을 쌓아왔습니다. 시운전부터 컨설팅까지, 최적의 선박 운항을 지원합니다.</span>
         </p>
-        <div class="about-ceo">
-          <span class="about-ceo-label">CEO</span>
-          <span data-en>Jeong Won-seok &mdash; Onboard Commissioning Specialist</span>
-          <span data-ko>정 원석 대표 &mdash; 선박 시운전 전문가</span>
-        </div>
-        <div style="margin-top:8px; font-size:13px; color:var(--text-x)">
+        <div style="margin-top:20px; font-size:13px; color:var(--text-x)">
           <span data-en>Business No. 605-81-87761 &nbsp;|&nbsp; Busan, Korea</span>
           <span data-ko>사업자등록번호 605-81-87761 &nbsp;|&nbsp; 부산광역시</span>
         </div>
@@ -425,6 +420,16 @@
           <span class="partner-badge">&#10003; <span data-en>Official Dealer &mdash; South Korea</span><span data-ko>공식 딜러 &mdash; 대한민국</span></span>
         </div>
         <div class="partner-card reveal reveal-d2">
+          <a href="https://www.orca-ai.io/" target="_blank" rel="noopener" class="partner-logo-wrap">
+            <img src="assets/images/logos/orca.svg" alt="Orca AI">
+          </a>
+          <p class="partner-desc">
+            <span data-en>AI-powered collision avoidance solution for commercial vessels. Orca AI's deep learning system enhances situational awareness and navigational safety at sea.</span>
+            <span data-ko>상업선을 위한 AI 기반 충돌 회피 솔루션. Orca AI의 딥러닝 시스템은 상황 인식과 항해 안전성을 향상시킵니다.</span>
+          </p>
+          <span class="partner-badge">&#10003; <span data-en>Official Partner &mdash; South Korea</span><span data-ko>공식 파트너 &mdash; 대한민국</span></span>
+        </div>
+        <div class="partner-card reveal reveal-d2">
           <a href="https://www.hammar.com/" target="_blank" rel="noopener" class="partner-logo-wrap">
             <img src="assets/images/logos/hammar.png" alt="Hammar">
           </a>
@@ -439,8 +444,8 @@
             <img src="assets/images/logos/navis.png" alt="Navis">
           </a>
           <p class="partner-desc">
-            <span data-en>Global leader in terminal and vessel management software. Integration partner for port logistics and cargo handling system connectivity.</span>
-            <span data-ko>항만 및 선박 관리 소프트웨어 분야 글로벌 리더. 항만 물류 및 화물 처리 시스템 연동 파트너.</span>
+            <span data-en>Vessel stability and structural safety management software. Navis solutions help crews ensure compliance with loading conditions and structural integrity standards.</span>
+            <span data-ko>선박 안정성 및 구조 안전 관리 소프트웨어. Navis 솔루션은 선원들이 적재 조건과 구조 안전 기준을 준수하도록 지원합니다.</span>
           </p>
           <span class="partner-badge">&#128279; <span data-en>Technology Partner</span><span data-ko>기술 파트너</span></span>
         </div>
