@@ -56,75 +56,81 @@
 <!-- ===== HERO ===== -->
 <section id="hero">
   <canvas id="heroCanvas" aria-hidden="true"></canvas>
-  <div class="hero-deco" aria-hidden="true">
-    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="250" cy="250" r="225" stroke="rgba(8,145,178,.07)" stroke-width="1.5"/>
-      <circle cx="250" cy="250" r="180" stroke="rgba(8,145,178,.08)" stroke-width="1"/>
-      <circle cx="250" cy="250" r="135" stroke="rgba(21,101,192,.10)" stroke-width="1"/>
-      <circle cx="250" cy="250" r="90" stroke="rgba(21,101,192,.13)" stroke-width="1.5"/>
-      <circle cx="250" cy="250" r="45" stroke="rgba(21,101,192,.16)" stroke-width="1.5"/>
-      <circle cx="250" cy="250" r="8" fill="rgba(21,101,192,.22)"/>
-      <line x1="250" y1="26" x2="250" y2="474" stroke="rgba(8,145,178,.06)" stroke-width="1"/>
-      <line x1="26" y1="250" x2="474" y2="250" stroke="rgba(8,145,178,.06)" stroke-width="1"/>
-      <line x1="91" y1="91" x2="409" y2="409" stroke="rgba(8,145,178,.04)" stroke-width="1"/>
-      <line x1="409" y1="91" x2="91" y2="409" stroke="rgba(8,145,178,.04)" stroke-width="1"/>
-      <g class="radar-sweep">
-        <path d="M250,250 L250,27 A223,223 0 0,1 291,35 Z" fill="rgba(8,145,178,.07)"/>
-        <line x1="250" y1="250" x2="250" y2="27" stroke="rgba(8,145,178,.50)" stroke-width="2"/>
-      </g>
-      <circle cx="318" cy="152" r="4" fill="rgba(8,145,178,.55)"/>
-      <circle cx="174" cy="318" r="3" fill="rgba(21,101,192,.45)"/>
-      <circle cx="358" cy="298" r="2.5" fill="rgba(8,145,178,.38)"/>
-      <circle cx="162" cy="188" r="2.5" fill="rgba(21,101,192,.35)"/>
-      <circle cx="292" cy="112" r="2" fill="rgba(8,145,178,.28)"/>
-    </svg>
-  </div>
   <div class="container">
-    <div class="hero-content reveal">
-      <div class="hero-eyebrow">
-        <span data-en>Marine Electronics Specialist</span>
-        <span data-ko>해양 전자 전문기업</span>
+    <div class="hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-eyebrow">
+          <span data-en>Marine Electronics Specialist</span>
+          <span data-ko>해양 전자 전문기업</span>
+        </div>
+        <h1 class="hero-h1">
+          <span data-en>Engineering Smarter,<br><span class="accent">Safer Maritime</span> Operations</span>
+          <span data-ko>해양 전자기술로 만드는<br><span class="accent">더 스마트하고 안전한 항해</span></span>
+        </h1>
+        <p class="hero-sub">
+          <span data-en>C&P Korea delivers advanced marine electronics, system integration, and R&D solutions — minimizing vessel downtime and enhancing maritime safety.</span>
+          <span data-ko>씨앤피코리아는 선박 전자장비, 시스템 통합, R&D 솔루션을 공급하며 선박 가동 중단을 최소화하고 해양 안전을 높입니다.</span>
+        </p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn-primary">
+            <span data-en>Our Services</span><span data-ko>서비스 보기</span>
+            &#8594;
+          </a>
+          <a href="#contact" class="btn-outline">
+            <span data-en>Contact Us</span><span data-ko>문의하기</span>
+          </a>
+        </div>
       </div>
-      <h1 class="hero-h1">
-        <span data-en>Engineering Smarter,<br><span class="accent">Safer Maritime</span> Operations</span>
-        <span data-ko>해양 전자기술로 만드는<br><span class="accent">더 스마트하고 안전한 항해</span></span>
-      </h1>
-      <p class="hero-sub">
-        <span data-en>C&P Korea delivers advanced marine electronics, system integration, and R&D solutions — minimizing vessel downtime and enhancing maritime safety.</span>
-        <span data-ko>씨앤피코리아는 선박 전자장비, 시스템 통합, R&D 솔루션을 공급하며 선박 가동 중단을 최소화하고 해양 안전을 높입니다.</span>
-      </p>
-      <div class="hero-ctas">
-        <a href="#services" class="btn-primary">
-          <span data-en>Our Services</span><span data-ko>서비스 보기</span>
-          &#8594;
-        </a>
-        <a href="#contact" class="btn-outline">
-          <span data-en>Contact Us</span><span data-ko>문의하기</span>
-        </a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-num"><span data-count="15">0</span>+</div>
-          <div class="hero-stat-label">
-            <span data-en>Years Experience</span><span data-ko>업력</span>
-          </div>
+      <div class="hero-visual reveal reveal-d1">
+        <div class="hero-visual-head">
+          <span class="hero-visual-dot" aria-hidden="true"></span>
+          <span data-en>Live Vessel Tracking</span><span data-ko>실시간 선박 추적</span>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num"><span data-count="11">0</span>+</div>
-          <div class="hero-stat-label">
-            <span data-en>Major Clients</span><span data-ko>주요 고객사</span>
+        <svg class="hero-radar" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="250" cy="250" r="225" stroke="rgba(8,145,178,.14)" stroke-width="1.5"/>
+          <circle cx="250" cy="250" r="180" stroke="rgba(8,145,178,.16)" stroke-width="1"/>
+          <circle cx="250" cy="250" r="135" stroke="rgba(21,101,192,.20)" stroke-width="1"/>
+          <circle cx="250" cy="250" r="90" stroke="rgba(21,101,192,.24)" stroke-width="1.5"/>
+          <circle cx="250" cy="250" r="45" stroke="rgba(21,101,192,.28)" stroke-width="1.5"/>
+          <circle cx="250" cy="250" r="8" fill="rgba(21,101,192,.32)"/>
+          <line x1="250" y1="26" x2="250" y2="474" stroke="rgba(8,145,178,.10)" stroke-width="1"/>
+          <line x1="26" y1="250" x2="474" y2="250" stroke="rgba(8,145,178,.10)" stroke-width="1"/>
+          <line x1="91" y1="91" x2="409" y2="409" stroke="rgba(8,145,178,.07)" stroke-width="1"/>
+          <line x1="409" y1="91" x2="91" y2="409" stroke="rgba(8,145,178,.07)" stroke-width="1"/>
+          <g class="radar-sweep">
+            <path d="M250,250 L250,27 A223,223 0 0,1 291,35 Z" fill="rgba(8,145,178,.14)"/>
+            <line x1="250" y1="250" x2="250" y2="27" stroke="rgba(8,145,178,.65)" stroke-width="2"/>
+          </g>
+          <circle cx="318" cy="152" r="4" fill="rgba(8,145,178,.7)"/>
+          <circle cx="174" cy="318" r="3" fill="rgba(21,101,192,.6)"/>
+          <circle cx="358" cy="298" r="2.5" fill="rgba(8,145,178,.5)"/>
+          <circle cx="162" cy="188" r="2.5" fill="rgba(21,101,192,.45)"/>
+          <circle cx="292" cy="112" r="2" fill="rgba(8,145,178,.38)"/>
+        </svg>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span data-count="15">0</span>+</div>
+            <div class="hero-stat-label">
+              <span data-en>Years Experience</span><span data-ko>업력</span>
+            </div>
           </div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num"><span data-count="5">0</span></div>
-          <div class="hero-stat-label">
-            <span data-en>Product Lines</span><span data-ko>제품 라인</span>
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span data-count="11">0</span>+</div>
+            <div class="hero-stat-label">
+              <span data-en>Major Clients</span><span data-ko>주요 고객사</span>
+            </div>
           </div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num" style="font-size:22px">NAVTOR</div>
-          <div class="hero-stat-label">
-            <span data-en>Official Dealer</span><span data-ko>공식 딜러</span>
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span data-count="5">0</span></div>
+            <div class="hero-stat-label">
+              <span data-en>Product Lines</span><span data-ko>제품 라인</span>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num" style="font-size:18px">NAVTOR</div>
+            <div class="hero-stat-label">
+              <span data-en>Official Dealer</span><span data-ko>공식 딜러</span>
+            </div>
           </div>
         </div>
       </div>
@@ -140,64 +146,66 @@
 <!-- ===== ABOUT ===== -->
 <section id="about" class="section section-alt">
   <div class="container">
-    <div class="about-grid">
-      <div class="reveal">
-        <div class="section-label">
-          <span data-en>About C&P Korea</span><span data-ko>씨앤피코리아 소개</span>
+    <div class="about-intro reveal">
+      <div class="section-label">
+        <span data-en>About C&P Korea</span><span data-ko>씨앤피코리아 소개</span>
+      </div>
+      <h2 class="section-title">
+        <span data-en>Your Trusted Partner<br>in Marine Technology</span>
+        <span data-ko>해양 기술의<br>믿을 수 있는 파트너</span>
+      </h2>
+      <p class="section-desc">
+        <span data-en>Founded in Busan — South Korea's shipbuilding capital — C&P Korea has built a reputation for precision, reliability, and deep technical expertise in onboard electronic systems. From commissioning to consulting, we keep your vessels running at peak performance.</span>
+        <span data-ko>대한민국 조선 1번지 부산에서 시작된 씨앤피코리아는 선박 전자 시스템 분야에서 정밀성과 기술력으로 명성을 쌓아왔습니다. 시운전부터 컨설팅까지, 최적의 선박 운항을 지원합니다.</span>
+      </p>
+      <div style="margin-top:20px; font-size:13px; color:var(--text-x)">
+        <span data-en>Business No. 605-81-87761 &nbsp;|&nbsp; Busan, Korea</span>
+        <span data-ko>사업자등록번호 605-81-87761 &nbsp;|&nbsp; 부산광역시</span>
+      </div>
+    </div>
+    <div class="about-rail reveal reveal-d1">
+      <div class="about-rail-item">
+        <span class="about-rail-num">01</span>
+        <div class="about-rail-icon">&#9875;</div>
+        <div class="about-rail-title">
+          <span data-en>Onboard Expertise</span><span data-ko>선상 전문 기술</span>
         </div>
-        <h2 class="section-title">
-          <span data-en>Your Trusted Partner<br>in Marine Technology</span>
-          <span data-ko>해양 기술의<br>믿을 수 있는 파트너</span>
-        </h2>
-        <p class="section-desc">
-          <span data-en>Founded in Busan — South Korea's shipbuilding capital — C&P Korea has built a reputation for precision, reliability, and deep technical expertise in onboard electronic systems. From commissioning to consulting, we keep your vessels running at peak performance.</span>
-          <span data-ko>대한민국 조선 1번지 부산에서 시작된 씨앤피코리아는 선박 전자 시스템 분야에서 정밀성과 기술력으로 명성을 쌓아왔습니다. 시운전부터 컨설팅까지, 최적의 선박 운항을 지원합니다.</span>
-        </p>
-        <div style="margin-top:20px; font-size:13px; color:var(--text-x)">
-          <span data-en>Business No. 605-81-87761 &nbsp;|&nbsp; Busan, Korea</span>
-          <span data-ko>사업자등록번호 605-81-87761 &nbsp;|&nbsp; 부산광역시</span>
+        <div class="about-rail-text">
+          <span data-en>Hands-on commissioning and troubleshooting at sea</span>
+          <span data-ko>실제 선박에서의 시운전 및 현장 기술 지원</span>
         </div>
       </div>
-      <div class="about-features reveal reveal-d1">
-        <div class="about-feature">
-          <div class="about-feature-icon">&#9875;</div>
-          <div class="about-feature-title">
-            <span data-en>Onboard Expertise</span><span data-ko>선상 전문 기술</span>
-          </div>
-          <div class="about-feature-text">
-            <span data-en>Hands-on commissioning and troubleshooting at sea</span>
-            <span data-ko>실제 선박에서의 시운전 및 현장 기술 지원</span>
-          </div>
+      <div class="about-rail-item">
+        <span class="about-rail-num">02</span>
+        <div class="about-rail-icon">&#128202;</div>
+        <div class="about-rail-title">
+          <span data-en>System Integration</span><span data-ko>시스템 통합</span>
         </div>
-        <div class="about-feature">
-          <div class="about-feature-icon">&#128202;</div>
-          <div class="about-feature-title">
-            <span data-en>System Integration</span><span data-ko>시스템 통합</span>
-          </div>
-          <div class="about-feature-text">
-            <span data-en>Seamless multi-vendor system integration solutions</span>
-            <span data-ko>다중 벤더 시스템의 완벽한 통합 솔루션</span>
-          </div>
+        <div class="about-rail-text">
+          <span data-en>Seamless multi-vendor system integration solutions</span>
+          <span data-ko>다중 벤더 시스템의 완벽한 통합 솔루션</span>
         </div>
-        <div class="about-feature">
-          <div class="about-feature-icon">&#128270;</div>
-          <div class="about-feature-title">
-            <span data-en>Compliance &amp; Safety</span><span data-ko>규정 준수 &amp; 안전</span>
-          </div>
-          <div class="about-feature-text">
-            <span data-en>Full compliance with IMO and class society requirements</span>
-            <span data-ko>IMO 및 선급 요구사항 완전 준수</span>
-          </div>
+      </div>
+      <div class="about-rail-item">
+        <span class="about-rail-num">03</span>
+        <div class="about-rail-icon">&#128270;</div>
+        <div class="about-rail-title">
+          <span data-en>Compliance &amp; Safety</span><span data-ko>규정 준수 &amp; 안전</span>
         </div>
-        <div class="about-feature">
-          <div class="about-feature-icon">&#128101;</div>
-          <div class="about-feature-title">
-            <span data-en>Crew Training</span><span data-ko>승무원 교육</span>
-          </div>
-          <div class="about-feature-text">
-            <span data-en>Practical training to enhance crew system awareness</span>
-            <span data-ko>시스템 이해도 향상을 위한 실전 교육</span>
-          </div>
+        <div class="about-rail-text">
+          <span data-en>Full compliance with IMO and class society requirements</span>
+          <span data-ko>IMO 및 선급 요구사항 완전 준수</span>
+        </div>
+      </div>
+      <div class="about-rail-item">
+        <span class="about-rail-num">04</span>
+        <div class="about-rail-icon">&#128101;</div>
+        <div class="about-rail-title">
+          <span data-en>Crew Training</span><span data-ko>승무원 교육</span>
+        </div>
+        <div class="about-rail-text">
+          <span data-en>Practical training to enhance crew system awareness</span>
+          <span data-ko>시스템 이해도 향상을 위한 실전 교육</span>
         </div>
       </div>
     </div>
