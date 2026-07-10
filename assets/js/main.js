@@ -167,7 +167,7 @@ if (contactForm) {
 
   function drawGrid() {
     const step = Math.round(Math.min(W, H) / 9);
-    ctx.strokeStyle = 'rgba(8,145,178,.055)';
+    ctx.strokeStyle = 'rgba(255,255,255,.5)';
     ctx.lineWidth = 1;
     for (let x = 0; x <= W; x += step) {
       ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
