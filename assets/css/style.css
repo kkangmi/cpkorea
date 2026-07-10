@@ -201,6 +201,24 @@ body.ko [data-ko] { display: revert; }
 }
 .hero-wave svg { width: 100%; display: block; height: 70px; }
 
+/* ===== TRUST BAR ===== */
+#trust-bar {
+  background: var(--white); border-bottom: 1px solid var(--border);
+  padding: 22px 0; position: relative; z-index: 2;
+}
+.trust-bar-inner { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.trust-bar-label {
+  font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--text-x); flex-shrink: 0;
+}
+.trust-bar-logos { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; }
+.trust-bar-logos img {
+  height: 26px; width: auto; max-width: 110px; object-fit: contain;
+  filter: grayscale(1); opacity: .55;
+  transition: opacity var(--trans), filter var(--trans);
+}
+.trust-bar-logos a:hover img { filter: grayscale(0); opacity: 1; }
+
 /* ===== SECTION LABELS ===== */
 .section-label {
   display: inline-flex; align-items: center; gap: 10px;
@@ -299,26 +317,22 @@ body.ko [data-ko] { display: revert; }
   padding: 64px 0;
   background: var(--bg-2);
 }
-.products-grid {
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px;
+.products-list {
   margin-top: 44px;
+  border-top: 1px solid var(--border);
 }
-.product-card {
-  background: var(--white); border: 1px solid var(--border);
-  border-radius: var(--r); padding: 20px 16px;
-  box-shadow: var(--shadow);
-  transition: box-shadow var(--trans), transform var(--trans);
+.product-row {
+  display: grid; grid-template-columns: 110px 1fr; gap: 24px;
+  padding: 26px 4px; border-bottom: 1px solid var(--border);
+  align-items: baseline;
+  transition: background var(--trans);
 }
-.product-card:hover { box-shadow: var(--shadow-hv); transform: translateY(-3px); }
-.product-code {
-  font-size: 20px; font-weight: 900; color: var(--blue);
-  letter-spacing: -0.5px; margin-bottom: 8px;
+.product-row:hover { background: rgba(8,145,178,.04); }
+.product-row-code {
+  font-size: 26px; font-weight: 900; color: var(--blue); letter-spacing: -0.5px;
 }
-.product-card h4 {
-  font-size: 12.5px; font-weight: 800; color: var(--navy);
-  margin-bottom: 8px; line-height: 1.4;
-}
-.product-card p { font-size: 11.5px; color: var(--text-dim); line-height: 1.6; }
+.product-row-body h4 { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+.product-row-body p { font-size: 13px; color: var(--text-dim); line-height: 1.7; max-width: 640px; }
 
 /* ===== PARTNERS ===== */
 #partners { background: var(--white); padding: 64px 0; }
@@ -471,12 +485,8 @@ a.partner-logo-wrap:hover { opacity: .75; }
 .reveal-d3 { transition-delay: 0.30s; }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 1100px) {
-  .products-grid { grid-template-columns: repeat(3, 1fr); }
-}
 @media (max-width: 900px) {
   .services-grid, .partners-grid { grid-template-columns: 1fr 1fr; }
-  .products-grid { grid-template-columns: repeat(3, 1fr); }
   .clients-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 768px) {
@@ -487,8 +497,8 @@ a.partner-logo-wrap:hover { opacity: .75; }
   .about-features { grid-template-columns: 1fr 1fr; }
   .services-grid { grid-template-columns: 1fr; }
   .partners-grid { grid-template-columns: 1fr; }
-  .products-grid { grid-template-columns: repeat(2, 1fr); }
   .clients-grid { grid-template-columns: repeat(3, 1fr); }
+  .product-row { grid-template-columns: 1fr; gap: 6px; padding: 20px 4px; }
   .hero-stats { flex-direction: column; gap: 12px; padding: 20px; }
   .hero-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.18); padding: 0 0 12px; }
   .hero-stat:last-child { border-bottom: none; padding-bottom: 0; }
@@ -500,9 +510,11 @@ a.partner-logo-wrap:hover { opacity: .75; }
   .footer-top { flex-direction: column; gap: 24px; }
   .section, .section-alt, #about, #products, #partners, #contact { padding: 44px 0; }
   #hero { min-height: auto; padding-top: 80px; padding-bottom: 44px; }
+  .trust-bar-inner { gap: 14px; }
+  .trust-bar-logos { gap: 24px; }
 }
 @media (max-width: 480px) {
-  .about-features, .products-grid { grid-template-columns: 1fr; }
+  .about-features { grid-template-columns: 1fr; }
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-h1 { letter-spacing: -1px; }
 }
