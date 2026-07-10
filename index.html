@@ -87,7 +87,7 @@
       </div>
       <h1 class="hero-h1">
         <span data-en>Engineering Smarter,<br><span class="accent">Safer Maritime</span> Operations</span>
-        <span data-ko>더 스마트하고<br><span class="accent">안전한 해양 운항</span>을 설계합니다</span>
+        <span data-ko>해양 전자기술로 만드는<br><span class="accent">더 스마트하고 안전한 항해</span></span>
       </h1>
       <p class="hero-sub">
         <span data-en>C&P Korea delivers advanced marine electronics, system integration, and R&D solutions — minimizing vessel downtime and enhancing maritime safety.</span>
@@ -360,8 +360,8 @@
         <span data-en>Clients &amp; Partners</span><span data-ko>주요 고객 &amp; 파트너</span>
       </div>
       <h2 class="section-title">
-        <span data-en>Trusted by Korea's Leading Shipbuilders</span>
-        <span data-ko>국내 최고 조선사들이 신뢰합니다</span>
+        <span data-en>A Technology Partner Across Korea's Shipbuilding &amp; Maritime Industry</span>
+        <span data-ko>조선·해양 산업 전반과 함께해온 기술 파트너</span>
       </h2>
     </div>
 
@@ -597,7 +597,7 @@
         <span class="footer-logo-text" style="display:none">C&amp;P Korea</span>
         <div class="footer-tagline">
           <span data-en>Engineering Smarter, Safer Maritime Operations</span>
-          <span data-ko>더 스마트하고 안전한 해양 운항을 설계합니다</span>
+          <span data-ko>해양 전자기술로 만드는 더 스마트하고 안전한 항해</span>
         </div>
         <div class="footer-meta">
           <span data-en>Business No. 605-81-87761 &nbsp;|&nbsp; 209, 71 Jeollyeong-ro, Yeongdo-gu, Busan</span>
