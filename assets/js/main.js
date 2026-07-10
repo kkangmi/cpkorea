@@ -136,6 +136,35 @@ if (contactForm) {
 
   function init() { resize(); ships = Array.from({ length: SHIP_COUNT }, mkShip); }
 
+  /* Steer ships away from each other so they never overlap/collide */
+  function avoidCollisions() {
+    const TURN_RATE = 0.035;
+    ships.forEach(s => {
+      let avoidX = 0, avoidY = 0, found = false;
+      ships.forEach(o => {
+        if (o === s) return;
+        const dx = s.x - o.x, dy = s.y - o.y;
+        const dist = Math.hypot(dx, dy);
+        const minDist = (s.sz + o.sz) * 3.2 + 18;
+        if (dist > 0.001 && dist < minDist) {
+          const w = (minDist - dist) / minDist;
+          avoidX += (dx / dist) * w;
+          avoidY += (dy / dist) * w;
+          found = true;
+        }
+      });
+      if (found) {
+        const desiredHdg = Math.atan2(avoidX, -avoidY);
+        let diff = desiredHdg - s.hdg;
+        while (diff > Math.PI) diff -= Math.PI * 2;
+        while (diff < -Math.PI) diff += Math.PI * 2;
+        s.hdg += Math.max(-TURN_RATE, Math.min(TURN_RATE, diff));
+        s.vx = Math.sin(s.hdg) * s.spd;
+        s.vy = -Math.cos(s.hdg) * s.spd;
+      }
+    });
+  }
+
   function drawGrid() {
     const step = Math.round(Math.min(W, H) / 9);
     ctx.strokeStyle = 'rgba(8,145,178,.055)';
@@ -190,6 +219,7 @@ if (contactForm) {
   function tick() {
     ctx.clearRect(0, 0, W, H);
     drawGrid();
+    avoidCollisions();
     ships.forEach(s => {
       s.trail.push({ x: s.x, y: s.y });
       if (s.trail.length > s.maxTrail) s.trail.shift();
