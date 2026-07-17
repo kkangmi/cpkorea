@@ -137,21 +137,6 @@
   </div>
 </section>
 
-<!-- ===== TRUST BAR ===== -->
-<section id="trust-bar">
-  <div class="container trust-bar-inner">
-    <span class="trust-bar-label">
-      <span data-en>Official Partners &amp; Dealer</span><span data-ko>공식 파트너 &amp; 딜러</span>
-    </span>
-    <div class="trust-bar-logos">
-      <a href="https://www.navtor.com/" target="_blank" rel="noopener"><img src="assets/images/logos/navtor.png" alt="NAVTOR"></a>
-      <a href="https://www.orca-ai.io/" target="_blank" rel="noopener"><img src="assets/images/logos/orca.png" alt="Orca AI"></a>
-      <a href="https://www.hammar.com/" target="_blank" rel="noopener"><img src="assets/images/logos/hammar.png" alt="Hammar"></a>
-      <a href="https://www.navis.com/" target="_blank" rel="noopener"><img src="assets/images/logos/navis.png" alt="Navis"></a>
-    </div>
-  </div>
-</section>
-
 <!-- ===== ABOUT ===== -->
 <section id="about" class="section section-alt">
   <div class="container">
@@ -309,32 +294,41 @@
     </div>
     <div class="products-list">
       <div class="product-row reveal reveal-d1">
+        <div class="product-row-media"><img src="assets/images/products/sg-1.png" alt="SG-1"></div>
         <div class="product-row-code">SG-1</div>
         <div class="product-row-body">
           <h4>
-            <span data-en>Serial Network Gateway</span>
-            <span data-ko>직렬 네트워크 게이트웨이</span>
+            <span data-en>Serial-to-Network Gateway</span>
+            <span data-ko>직렬-네트워크 게이트웨이</span>
           </h4>
           <p>
             <span data-en>Multi-protocol bridge for serial navigation data</span>
             <span data-ko>직렬 항법 데이터 멀티 프로토콜 변환</span>
           </p>
+          <a href="assets/catalogs/SG-1.pdf" target="_blank" class="product-row-catalog">
+            <span data-en>Download Catalog</span><span data-ko>카탈로그 다운로드</span> &#8595;
+          </a>
         </div>
       </div>
       <div class="product-row reveal reveal-d1">
+        <div class="product-row-media"><img src="assets/images/products/ei-1.png" alt="EI-1"></div>
         <div class="product-row-code">EI-1</div>
         <div class="product-row-body">
           <h4>
-            <span data-en>Electronic Inspector</span>
-            <span data-ko>전자 검사계</span>
+            <span data-en>Electronic Inclinometer</span>
+            <span data-ko>전자 경사계</span>
           </h4>
           <p>
             <span data-en>Onboard system condition monitoring and diagnostics</span>
             <span data-ko>선박 시스템 상태 모니터링 및 진단</span>
           </p>
+          <a href="assets/catalogs/EI-1.pdf" target="_blank" class="product-row-catalog">
+            <span data-en>Download Catalog</span><span data-ko>카탈로그 다운로드</span> &#8595;
+          </a>
         </div>
       </div>
       <div class="product-row reveal reveal-d2">
+        <div class="product-row-media"><img src="assets/images/products/cis-1.png" alt="CIS-1"></div>
         <div class="product-row-code">CIS-1</div>
         <div class="product-row-body">
           <h4>
@@ -345,9 +339,13 @@
             <span data-en>Integrated bridge display for real-time navigation data</span>
             <span data-ko>실시간 항법 정보 통합 브리지 디스플레이</span>
           </p>
+          <a href="assets/catalogs/CIS-1.pdf" target="_blank" class="product-row-catalog">
+            <span data-en>Download Catalog</span><span data-ko>카탈로그 다운로드</span> &#8595;
+          </a>
         </div>
       </div>
       <div class="product-row reveal reveal-d2">
+        <div class="product-row-media"><img src="assets/images/products/mis-1.png" alt="MIS-1"></div>
         <div class="product-row-code">MIS-1</div>
         <div class="product-row-body">
           <h4>
@@ -358,19 +356,26 @@
             <span data-en>Engine room data aggregation and visualization</span>
             <span data-ko>기관실 데이터 통합 및 시각화</span>
           </p>
+          <a href="assets/catalogs/MIS-1.pdf" target="_blank" class="product-row-catalog">
+            <span data-en>Download Catalog</span><span data-ko>카탈로그 다운로드</span> &#8595;
+          </a>
         </div>
       </div>
       <div class="product-row reveal reveal-d3">
+        <div class="product-row-media"><img src="assets/images/products/mdm-1.png" alt="MDM-1"></div>
         <div class="product-row-code">MDM-1</div>
         <div class="product-row-body">
           <h4>
-            <span data-en>Maritime Data Manager</span>
+            <span data-en>Marine Data Management</span>
             <span data-ko>해양 데이터 관리</span>
           </h4>
           <p>
             <span data-en>Voyage data recording, storage, and reporting solution</span>
             <span data-ko>항해 데이터 기록, 저장 및 보고 솔루션</span>
           </p>
+          <a href="assets/catalogs/MDM-1.pdf" target="_blank" class="product-row-catalog">
+            <span data-en>Download Catalog</span><span data-ko>카탈로그 다운로드</span> &#8595;
+          </a>
         </div>
       </div>
     </div>
@@ -395,46 +400,18 @@
         <span data-en>Global Technology Partners</span><span data-ko>글로벌 기술 파트너</span>
       </div>
       <div class="partners-grid">
-        <div class="partner-card reveal reveal-d1">
-          <a href="https://www.navtor.com/" target="_blank" rel="noopener" class="partner-logo-wrap">
-            <img src="assets/images/logos/navtor.png" alt="NAVTOR">
-          </a>
-          <p class="partner-desc">
-            <span data-en>Digital navigation services — ENC, voyage planning, and NavStation platform. C&P Korea is the official authorized dealer for South Korea.</span>
-            <span data-ko>디지털 항법 서비스 — ENC, 항해 계획, NavStation 플랫폼. 씨앤피코리아는 공식 국내 공급 딜러입니다.</span>
-          </p>
-          <span class="partner-badge">&#10003; <span data-en>Official Dealer &mdash; South Korea</span><span data-ko>공식 딜러 &mdash; 대한민국</span></span>
-        </div>
-        <div class="partner-card reveal reveal-d2">
-          <a href="https://www.orca-ai.io/" target="_blank" rel="noopener" class="partner-logo-wrap">
-            <img src="assets/images/logos/orca.png" alt="Orca AI">
-          </a>
-          <p class="partner-desc">
-            <span data-en>AI-powered collision avoidance solution for commercial vessels. Orca AI's deep learning system enhances situational awareness and navigational safety at sea.</span>
-            <span data-ko>상업선을 위한 AI 기반 충돌 회피 솔루션. Orca AI의 딥러닝 시스템은 상황 인식과 항해 안전성을 향상시킵니다.</span>
-          </p>
-          <span class="partner-badge">&#10003; <span data-en>Official Partner &mdash; South Korea</span><span data-ko>공식 파트너 &mdash; 대한민국</span></span>
-        </div>
-        <div class="partner-card reveal reveal-d2">
-          <a href="https://www.hammar.com/" target="_blank" rel="noopener" class="partner-logo-wrap">
-            <img src="assets/images/logos/hammar.png" alt="Hammar">
-          </a>
-          <p class="partner-desc">
-            <span data-en>Swedish manufacturer of hydrostatic releases and marine safety equipment. Trusted globally for life-saving appliance systems on commercial vessels.</span>
-            <span data-ko>스웨덴의 수압 이탈기 및 선박 안전장비 전문 제조사. 상업선의 구명 장비 시스템 분야에서 세계적으로 신뢰받고 있습니다.</span>
-          </p>
-          <span class="partner-badge">&#128279; <span data-en>Technology Partner</span><span data-ko>기술 파트너</span></span>
-        </div>
-        <div class="partner-card reveal reveal-d3">
-          <a href="https://www.navis.com/" target="_blank" rel="noopener" class="partner-logo-wrap">
-            <img src="assets/images/logos/navis.png" alt="Navis">
-          </a>
-          <p class="partner-desc">
-            <span data-en>Vessel stability and structural safety management software. Navis solutions help crews ensure compliance with loading conditions and structural integrity standards.</span>
-            <span data-ko>선박 안정성 및 구조 안전 관리 소프트웨어. Navis 솔루션은 선원들이 적재 조건과 구조 안전 기준을 준수하도록 지원합니다.</span>
-          </p>
-          <span class="partner-badge">&#128279; <span data-en>Technology Partner</span><span data-ko>기술 파트너</span></span>
-        </div>
+        <a href="https://www.navtor.com/" target="_blank" rel="noopener" class="partner-logo-card reveal reveal-d1">
+          <img src="assets/images/logos/navtor.png" alt="NAVTOR">
+        </a>
+        <a href="https://www.orca-ai.io/" target="_blank" rel="noopener" class="partner-logo-card reveal reveal-d2">
+          <img src="assets/images/logos/orca.png" alt="Orca AI">
+        </a>
+        <a href="https://www.hammar.com/" target="_blank" rel="noopener" class="partner-logo-card reveal reveal-d2">
+          <img src="assets/images/logos/hammar.png" alt="Hammar">
+        </a>
+        <a href="https://www.navis.com/" target="_blank" rel="noopener" class="partner-logo-card reveal reveal-d3">
+          <img src="assets/images/logos/navis.png" alt="Navis">
+        </a>
       </div>
     </div>
 
@@ -443,53 +420,41 @@
         <span data-en>Domestic Clients &amp; Institutions</span><span data-ko>국내 발주·협력 기관</span>
       </div>
       <div class="clients-grid">
-        <div class="client-item reveal reveal-d1">
-          <div class="client-name">현대중공업</div>
-          <div class="client-sub">Hyundai Heavy Industries</div>
+        <div class="client-logo-item reveal reveal-d1">
+          <img src="assets/images/logos/hhi.png" alt="현대중공업 Hyundai Heavy Industries">
         </div>
-        <div class="client-item reveal reveal-d1">
-          <div class="client-name">DSME</div>
-          <div class="client-sub">대우조선해양</div>
+        <div class="client-logo-item reveal reveal-d1">
+          <img src="assets/images/logos/dsme.png" alt="DSME 대우조선해양">
         </div>
-        <div class="client-item reveal reveal-d2">
-          <div class="client-name">삼성중공업</div>
-          <div class="client-sub">Samsung Heavy Industries</div>
+        <div class="client-logo-item reveal reveal-d2">
+          <img src="assets/images/logos/samsungshi.png" alt="삼성중공업 Samsung Heavy Industries">
         </div>
-        <div class="client-item reveal reveal-d2">
-          <div class="client-name">한진중공업</div>
-          <div class="client-sub">Hanjin Heavy Industries</div>
+        <div class="client-logo-item reveal reveal-d2">
+          <img src="assets/images/logos/hanjin.jpg" alt="한진중공업 Hanjin Heavy Industries">
         </div>
-        <div class="client-item reveal reveal-d2">
-          <div class="client-name">현대BS&amp;C</div>
-          <div class="client-sub">Hyundai BS&C</div>
+        <div class="client-logo-item reveal reveal-d2">
+          <img src="assets/images/logos/hbsc.jpg" alt="현대BS&amp;C">
         </div>
-        <div class="client-item reveal reveal-d3">
-          <div class="client-name">산업통상자원부</div>
-          <div class="client-sub">MOTIE</div>
+        <div class="client-logo-item reveal reveal-d3">
+          <img src="assets/images/logos/motie.png" alt="산업통상자원부 MOTIE">
         </div>
-        <div class="client-item reveal reveal-d1">
-          <div class="client-name">해양수산부</div>
-          <div class="client-sub">MOF Korea</div>
+        <div class="client-logo-item reveal reveal-d1">
+          <img src="assets/images/logos/mof.png" alt="해양수산부 MOF Korea">
         </div>
-        <div class="client-item reveal reveal-d1">
-          <div class="client-name">ETRI</div>
-          <div class="client-sub">전자통신연구원</div>
+        <div class="client-logo-item reveal reveal-d1">
+          <img src="assets/images/logos/etri.png" alt="ETRI 전자통신연구원">
         </div>
-        <div class="client-item reveal reveal-d2">
-          <div class="client-name">KIOST</div>
-          <div class="client-sub">한국해양과학기술원</div>
+        <div class="client-logo-item reveal reveal-d2">
+          <img src="assets/images/logos/kiost.jpg" alt="KIOST 한국해양과학기술원">
         </div>
-        <div class="client-item reveal reveal-d2">
-          <div class="client-name">중소조선연구원</div>
-          <div class="client-sub">RIMS</div>
+        <div class="client-logo-item reveal reveal-d2">
+          <img src="assets/images/logos/rims.png" alt="중소조선연구원 RIMS">
         </div>
-        <div class="client-item reveal reveal-d3">
-          <div class="client-name">KOMERI</div>
-          <div class="client-sub">한국선박기자재연구원</div>
+        <div class="client-logo-item reveal reveal-d3">
+          <img src="assets/images/logos/komeri.png" alt="KOMERI 한국선박기자재연구원">
         </div>
-        <div class="client-item reveal reveal-d3">
-          <div class="client-name">Kongsberg</div>
-          <div class="client-sub">콩스버그</div>
+        <div class="client-logo-item reveal reveal-d3">
+          <span class="client-logo-fallback">Kongsberg</span>
         </div>
       </div>
     </div>
