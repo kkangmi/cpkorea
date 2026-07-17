@@ -352,6 +352,23 @@
           </a>
         </div>
       </div>
+      <a href="#contact" class="product-row product-row-cta reveal reveal-d3">
+        <div class="product-row-media product-row-cta-icon">+</div>
+        <div class="product-row-code">OEM</div>
+        <div class="product-row-body">
+          <h4>
+            <span data-en>Need a Custom Solution?</span>
+            <span data-ko>맞춤 개발이 필요하신가요?</span>
+          </h4>
+          <p>
+            <span data-en>We also provide custom hardware/software development and OEM production tailored to specific vessel requirements.</span>
+            <span data-ko>선박별 요구사항에 맞춘 맞춤형 하드웨어·소프트웨어 개발과 OEM 생산도 지원합니다.</span>
+          </p>
+          <span class="product-row-catalog">
+            <span data-en>Get in Touch</span><span data-ko>문의하기</span> &#8594;
+          </span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -359,7 +376,7 @@
 <!-- ===== PARTNERS ===== -->
 <section id="partners" class="section">
   <div class="container">
-    <div class="reveal" style="margin-bottom:44px">
+    <div class="reveal" style="margin-bottom:32px">
       <div class="section-label">
         <span data-en>Clients &amp; Partners</span><span data-ko>주요 고객 &amp; 파트너</span>
       </div>
@@ -369,22 +386,26 @@
       </h2>
     </div>
 
-    <div style="margin-bottom:48px">
+    <div style="margin-bottom:36px">
       <div class="clients-label reveal">
         <span data-en>Global Technology Partners</span><span data-ko>글로벌 기술 파트너</span>
       </div>
       <div class="partners-grid">
         <a href="https://www.navtor.com/" target="_blank" rel="noopener" class="partner-logo-card reveal reveal-d1">
           <img src="assets/images/logos/navtor.png" alt="NAVTOR">
+          <span class="partner-logo-tag"><span data-en>ENC &amp; Voyage Planning</span><span data-ko>ENC &amp; 항해 계획</span></span>
         </a>
         <a href="https://www.orca-ai.io/" target="_blank" rel="noopener" class="partner-logo-card reveal reveal-d2">
           <img src="assets/images/logos/orca.png" alt="Orca AI">
+          <span class="partner-logo-tag"><span data-en>AI Collision Avoidance</span><span data-ko>AI 충돌 회피</span></span>
         </a>
         <a href="https://www.hammar.com/" target="_blank" rel="noopener" class="partner-logo-card reveal reveal-d2">
           <img src="assets/images/logos/hammar.png" alt="Hammar">
+          <span class="partner-logo-tag"><span data-en>Life-Saving Equipment</span><span data-ko>구명 장비</span></span>
         </a>
         <a href="https://www.navis.com/" target="_blank" rel="noopener" class="partner-logo-card reveal reveal-d3">
           <img src="assets/images/logos/navis.png" alt="Navis">
+          <span class="partner-logo-tag"><span data-en>Vessel Stability Software</span><span data-ko>선박 안정성 소프트웨어</span></span>
         </a>
       </div>
     </div>
