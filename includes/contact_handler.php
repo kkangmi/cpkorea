@@ -1,6 +1,13 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 
+require __DIR__ . '/PHPMailer/Exception.php';
+require __DIR__ . '/PHPMailer/PHPMailer.php';
+require __DIR__ . '/PHPMailer/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception as PHPMailerException;
+
 $host   = 'localhost';
 $dbname = 'cpkorea';
 $user   = 'root';
@@ -16,14 +23,15 @@ $service = sanitize($_POST['service'] ?? '');
 $message = sanitize($_POST['message'] ?? '');
 
 if (!$name || !$email || !$message) {
-    echo json_encode(['success' => false, 'message' => 'Required fields missing.']);
+    echo json_encode(['success' => false, 'message' => 'Required fields missing.'], JSON_INVALID_UTF8_SUBSTITUTE);
     exit;
 }
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo json_encode(['success' => false, 'message' => 'Invalid email address.']);
+    echo json_encode(['success' => false, 'message' => 'Invalid email address.'], JSON_INVALID_UTF8_SUBSTITUTE);
     exit;
 }
 
+/* DB 저장 (선택 — 실패해도 이메일 발송은 계속 진행) */
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -51,22 +59,41 @@ try {
         ':service' => $service,
         ':message' => $message,
     ]);
-
-    /* 이메일 발송 (선택) */
-    $to      = 'sales@cp-korea.com';
-    $subject = "[C&P Korea 문의] {$name} / {$company}";
-    $body    = "이름: {$name}\n회사: {$company}\n이메일: {$email}\n전화: {$phone}\n서비스: {$service}\n\n내용:\n{$message}";
-    $headers = "From: noreply@cp-korea.com\r\nReply-To: {$email}\r\nContent-Type: text/plain; charset=UTF-8";
-    @mail($to, $subject, $body, $headers);
-
-    echo json_encode(['success' => true]);
 } catch (PDOException $e) {
-    /* DB 연결 실패 시에도 이메일은 발송 시도 */
-    $to      = 'sales@cp-korea.com';
-    $subject = "[C&P Korea 문의] {$name}";
-    $body    = "이름: {$name}\n회사: {$company}\n이메일: {$email}\n전화: {$phone}\n서비스: {$service}\n\n내용:\n{$message}";
-    $headers = "From: noreply@cp-korea.com\r\nReply-To: {$email}";
-    @mail($to, $subject, $body, $headers);
+    /* DB 연결/저장 실패는 무시하고 이메일 발송으로 계속 진행 */
+}
 
-    echo json_encode(['success' => true]);
+/* 이메일 발송 (SMTP, PHPMailer) */
+$configPath = __DIR__ . '/mail_config.php';
+if (!file_exists($configPath)) {
+    echo json_encode([
+        'success' => false,
+        'message' => 'Mail is not configured yet. Copy includes/mail_config.sample.php to includes/mail_config.php and fill in your SMTP details.',
+    ], JSON_INVALID_UTF8_SUBSTITUTE);
+    exit;
+}
+$config = require $configPath;
+
+$mail = new PHPMailer(true);
+try {
+    $mail->isSMTP();
+    $mail->Host       = $config['host'];
+    $mail->Port       = $config['port'];
+    $mail->SMTPAuth   = true;
+    $mail->Username   = $config['username'];
+    $mail->Password   = $config['password'];
+    $mail->SMTPSecure = $config['encryption'];
+    $mail->CharSet    = 'UTF-8';
+
+    $mail->setFrom($config['from_email'], $config['from_name']);
+    $mail->addAddress($config['to_email']);
+    $mail->addReplyTo($email, $name);
+
+    $mail->Subject = "[C&P Korea 문의] {$name} / {$company}";
+    $mail->Body    = "이름: {$name}\n회사: {$company}\n이메일: {$email}\n전화: {$phone}\n서비스: {$service}\n\n내용:\n{$message}";
+
+    $mail->send();
+    echo json_encode(['success' => true], JSON_INVALID_UTF8_SUBSTITUTE);
+} catch (PHPMailerException $e) {
+    echo json_encode(['success' => false, 'message' => 'Email send failed: ' . $mail->ErrorInfo], JSON_INVALID_UTF8_SUBSTITUTE);
 }
