@@ -335,6 +335,9 @@ body.ko [data-ko] { display: revert; }
 }
 .client-logo-item:hover { border-color: rgba(8,145,178,.35); box-shadow: var(--shadow-hv); transform: translateY(-3px); }
 .client-logo-item img { max-width: 100%; max-height: 40px; width: auto; height: auto; object-fit: contain; }
+.client-logo-item--combo { gap: 9px; }
+.client-logo-combo-icon { max-height: 30px; flex-shrink: 0; }
+.client-logo-combo-text { font-size: 15px; font-weight: 800; color: var(--navy); letter-spacing: .4px; }
 .partners-grid {
   display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px;
 }

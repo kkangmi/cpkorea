@@ -448,8 +448,9 @@
         <div class="client-logo-item reveal reveal-d3">
           <img src="assets/images/logos/komeri.png" alt="KOMERI 한국선박기자재연구원">
         </div>
-        <div class="client-logo-item reveal reveal-d3">
-          <img src="assets/images/logos/kongsberg.png" alt="Kongsberg 콩스버그">
+        <div class="client-logo-item client-logo-item--combo reveal reveal-d3">
+          <img src="assets/images/logos/kongsberg-icon.png" alt="" class="client-logo-combo-icon">
+          <span class="client-logo-combo-text">KONGSBERG</span>
         </div>
       </div>
     </div>
