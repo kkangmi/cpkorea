@@ -155,24 +155,6 @@ body.ko [data-ko] { display: revert; }
 }
 .btn-outline:hover { border-color: var(--navy); background: var(--bg-2); transform: translateY(-2px); }
 
-/* Hero stats */
-.hero-stats {
-  display: flex;
-  background: var(--navy); border-radius: var(--r-lg);
-  padding: 20px 28px;
-}
-.hero-stat { flex: 1; padding: 0 24px; border-right: 1px solid rgba(255,255,255,.15); }
-.hero-stat:first-child { padding-left: 0; }
-.hero-stat:last-child { border-right: none; }
-.hero-stat-num {
-  font-size: 26px; font-weight: 900; color: #fff;
-  letter-spacing: -0.5px; line-height: 1; margin-bottom: 5px;
-}
-.hero-stat-label {
-  font-size: 10px; color: rgba(255,255,255,.55); font-weight: 600;
-  letter-spacing: .5px; text-transform: uppercase; line-height: 1.4;
-}
-
 /* Canvas particle / radar deco / wave */
 #heroCanvas {
   position: absolute; inset: 0;
@@ -344,7 +326,6 @@ body.ko [data-ko] { display: revert; }
 }
 .client-logo-item:hover { border-color: rgba(8,145,178,.35); box-shadow: var(--shadow-hv); transform: translateY(-3px); }
 .client-logo-item img { max-width: 100%; max-height: 40px; width: auto; height: auto; object-fit: contain; }
-.client-logo-fallback { font-size: 14px; font-weight: 800; color: var(--navy); letter-spacing: .3px; }
 .partners-grid {
   display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px;
 }
@@ -476,10 +457,6 @@ body.ko [data-ko] { display: revert; }
   .partners-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .clients-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .product-row { grid-template-columns: 1fr; gap: 6px; padding: 20px 4px; }
-  .hero-stats { flex-direction: column; gap: 12px; padding: 20px; }
-  .hero-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.18); padding: 0 0 12px; }
-  .hero-stat:last-child { border-bottom: none; padding-bottom: 0; }
-  .hero-stat:first-child { padding-left: 0; }
   .form-row { grid-template-columns: minmax(0, 1fr); }
   .contact-form-wrap { padding: 22px 18px; }
   .contact-items { margin-top: 16px; gap: 14px; }

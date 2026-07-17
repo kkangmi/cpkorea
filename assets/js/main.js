@@ -55,28 +55,6 @@ const revealObs = new IntersectionObserver(entries => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 revealEls.forEach(el => revealObs.observe(el));
 
-/* Count-up */
-function countUp(el, target, duration) {
-  const start = performance.now();
-  (function tick(now) {
-    const progress = Math.min((now - start) / duration, 1);
-    el.textContent = Math.floor(progress * target);
-    if (progress < 1) requestAnimationFrame(tick);
-    else el.textContent = target;
-  })(start);
-}
-const countObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.querySelectorAll('[data-count]').forEach(el => {
-        countUp(el, parseInt(el.dataset.count), 1800);
-      });
-      countObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.3 });
-document.querySelectorAll('.hero-stats').forEach(el => countObs.observe(el));
-
 /* Contact form */
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {

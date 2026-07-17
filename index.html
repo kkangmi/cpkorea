@@ -102,32 +102,6 @@
           <span data-en>Contact Us</span><span data-ko>문의하기</span>
         </a>
       </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-num"><span data-count="15">0</span>+</div>
-          <div class="hero-stat-label">
-            <span data-en>Years Experience</span><span data-ko>업력</span>
-          </div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num"><span data-count="11">0</span>+</div>
-          <div class="hero-stat-label">
-            <span data-en>Major Clients</span><span data-ko>주요 고객사</span>
-          </div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num"><span data-count="5">0</span></div>
-          <div class="hero-stat-label">
-            <span data-en>Product Lines</span><span data-ko>제품 라인</span>
-          </div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num" style="font-size:22px">NAVTOR</div>
-          <div class="hero-stat-label">
-            <span data-en>Official Dealer</span><span data-ko>공식 딜러</span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div class="hero-wave" aria-hidden="true">
@@ -454,7 +428,7 @@
           <img src="assets/images/logos/komeri.png" alt="KOMERI 한국선박기자재연구원">
         </div>
         <div class="client-logo-item reveal reveal-d3">
-          <span class="client-logo-fallback">Kongsberg</span>
+          <img src="assets/images/logos/kongsberg.png" alt="Kongsberg 콩스버그">
         </div>
       </div>
     </div>
