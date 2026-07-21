@@ -14,6 +14,11 @@ $user   = 'root';
 $pass   = '';
 
 function sanitize($v) { return htmlspecialchars(trim($v), ENT_QUOTES, 'UTF-8'); }
+/* json_encode() silently returns false (empty response) if a string contains invalid
+   UTF-8 — e.g. OS-locale error text from a failed SMTP connection. Strip it so the
+   response is always valid JSON, even on PHP < 7.2 where JSON_INVALID_UTF8_SUBSTITUTE
+   doesn't exist. */
+function safe_utf8($v) { return @iconv('UTF-8', 'UTF-8//IGNORE', (string) $v); }
 
 $name    = sanitize($_POST['name']    ?? '');
 $company = sanitize($_POST['company'] ?? '');
@@ -23,11 +28,11 @@ $service = sanitize($_POST['service'] ?? '');
 $message = sanitize($_POST['message'] ?? '');
 
 if (!$name || !$email || !$message) {
-    echo json_encode(['success' => false, 'message' => 'Required fields missing.'], JSON_INVALID_UTF8_SUBSTITUTE);
+    echo json_encode(['success' => false, 'message' => 'Required fields missing.']);
     exit;
 }
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo json_encode(['success' => false, 'message' => 'Invalid email address.'], JSON_INVALID_UTF8_SUBSTITUTE);
+    echo json_encode(['success' => false, 'message' => 'Invalid email address.']);
     exit;
 }
 
@@ -69,7 +74,7 @@ if (!file_exists($configPath)) {
     echo json_encode([
         'success' => false,
         'message' => 'Mail is not configured yet. Copy includes/mail_config.sample.php to includes/mail_config.php and fill in your SMTP details.',
-    ], JSON_INVALID_UTF8_SUBSTITUTE);
+    ]);
     exit;
 }
 $config = require $configPath;
@@ -93,7 +98,7 @@ try {
     $mail->Body    = "이름: {$name}\n회사: {$company}\n이메일: {$email}\n전화: {$phone}\n서비스: {$service}\n\n내용:\n{$message}";
 
     $mail->send();
-    echo json_encode(['success' => true], JSON_INVALID_UTF8_SUBSTITUTE);
+    echo json_encode(['success' => true]);
 } catch (PHPMailerException $e) {
-    echo json_encode(['success' => false, 'message' => 'Email send failed: ' . $mail->ErrorInfo], JSON_INVALID_UTF8_SUBSTITUTE);
+    echo json_encode(['success' => false, 'message' => 'Email send failed: ' . safe_utf8($mail->ErrorInfo)]);
 }
