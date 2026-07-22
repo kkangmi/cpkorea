@@ -541,15 +541,21 @@
           </div>
           <div class="form-group">
             <label><span data-en>Service Interest</span><span data-ko>관심 서비스</span></label>
-            <select name="service">
-              <option value="" data-en="Select a service" data-ko="서비스 선택"></option>
-              <option value="marine-electronics" data-en="Marine Electronics" data-ko="선박 전자장비"></option>
-              <option value="system-integration" data-en="Marine System Integration" data-ko="시스템 통합"></option>
-              <option value="rnd" data-en="R&amp;D Service &amp; Consulting" data-ko="R&amp;D 컨설팅"></option>
-              <option value="navtor" data-en="NAVTOR Products" data-ko="NAVTOR Products"></option>
-              <option value="product" data-en="Proprietary Products (SG/EI/CIS/MIS/MDM)" data-ko="자체 제품 (SG/EI/CIS/MIS/MDM)"></option>
-              <option value="other" data-en="Other" data-ko="기타"></option>
-            </select>
+            <div class="custom-select">
+              <button type="button" class="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+                <span class="custom-select-value"><span data-en>Select a service</span><span data-ko>서비스 선택</span></span>
+                <svg class="custom-select-arrow" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <input type="hidden" name="service" value="">
+              <ul class="custom-select-list" role="listbox">
+                <li data-value="marine-electronics"><span data-en>Marine Electronics</span><span data-ko>선박 전자장비</span></li>
+                <li data-value="system-integration"><span data-en>Marine System Integration</span><span data-ko>시스템 통합</span></li>
+                <li data-value="rnd"><span data-en>R&amp;D Service &amp; Consulting</span><span data-ko>R&amp;D 컨설팅</span></li>
+                <li data-value="navtor"><span data-en>NAVTOR Products</span><span data-ko>NAVTOR Products</span></li>
+                <li data-value="product"><span data-en>Proprietary Products (SG/EI/CIS/MIS/MDM)</span><span data-ko>자체 제품 (SG/EI/CIS/MIS/MDM)</span></li>
+                <li data-value="other"><span data-en>Other</span><span data-ko>기타</span></li>
+              </ul>
+            </div>
           </div>
           <div class="form-group">
             <label><span data-en>Message *</span><span data-ko>문의 내용 *</span></label>

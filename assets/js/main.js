@@ -7,9 +7,6 @@ function setLang(l) {
   document.body.classList.toggle('ko', l === 'ko');
   document.querySelectorAll('.lang-ko').forEach(b => b.classList.toggle('active', l === 'ko'));
   document.querySelectorAll('.lang-en').forEach(b => b.classList.toggle('active', l === 'en'));
-  document.querySelectorAll('select option[data-en]').forEach(o => {
-    o.textContent = l === 'ko' ? o.dataset.ko : o.dataset.en;
-  });
   localStorage.setItem('cpkorea_lang', l);
 }
 (function initLang() {
@@ -54,6 +51,45 @@ const revealObs = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 revealEls.forEach(el => revealObs.observe(el));
+
+/* Custom dropdown (Service Interest) — replaces native <select> */
+document.querySelectorAll('.custom-select').forEach(wrap => {
+  const trigger = wrap.querySelector('.custom-select-trigger');
+  const valueEl = wrap.querySelector('.custom-select-value');
+  const hiddenInput = wrap.querySelector('input[type="hidden"]');
+  const items = Array.from(wrap.querySelectorAll('.custom-select-list li'));
+
+  function close() {
+    wrap.classList.remove('open');
+    trigger.setAttribute('aria-expanded', 'false');
+  }
+  function toggle() {
+    const isOpen = wrap.classList.toggle('open');
+    trigger.setAttribute('aria-expanded', String(isOpen));
+  }
+
+  trigger.addEventListener('click', e => {
+    e.stopPropagation();
+    toggle();
+  });
+
+  items.forEach(li => {
+    li.addEventListener('click', () => {
+      hiddenInput.value = li.dataset.value;
+      valueEl.innerHTML = li.innerHTML;
+      items.forEach(o => o.classList.remove('selected'));
+      li.classList.add('selected');
+      close();
+    });
+  });
+
+  document.addEventListener('click', e => {
+    if (!wrap.contains(e.target)) close();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') close();
+  });
+});
 
 /* Contact form */
 const contactForm = document.getElementById('contactForm');
@@ -194,6 +230,7 @@ if (contactForm) {
     ctx.restore();
   }
 
+  let rafId = null;
   function tick() {
     ctx.clearRect(0, 0, W, H);
     drawGrid();
@@ -210,9 +247,23 @@ if (contactForm) {
       if (s.y > H + 30) { s.y = -30; wrap = true; }
       if (wrap) s.trail = [];
     });
-    requestAnimationFrame(tick);
+    rafId = requestAnimationFrame(tick);
   }
 
+  /* Only animate while the hero section is actually on screen — avoids an
+     endless repaint loop running behind the rest of the page. */
+  const canvasObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        if (rafId === null) rafId = requestAnimationFrame(tick);
+      } else if (rafId !== null) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+    });
+  });
+  canvasObs.observe(canvas);
+
   window.addEventListener('resize', init);
-  init(); tick();
+  init();
 })();
